@@ -1,0 +1,17 @@
+@import "partials/normalize";
+@import "partials/nav";
+@import "partials/header";
+@import "partials/content";
+
+body{
+     width: 100%;
+
+     h1,h2{
+      font-family: 'Kaushan Script', cursive;
+      }
+     p{
+       font-family: 'Open Sans', sans-serif;
+     }
+}
+
+@import "partials/mediaQ";

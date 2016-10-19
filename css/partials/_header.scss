@@ -1,0 +1,33 @@
+header{
+       background: #00AD82;
+  article{
+          width: 100%;
+          padding: 70px 30px 30px 30px;
+
+          section{
+                  clear: both;
+                  .codepen{
+                          display: inline-block;
+                          width: 62%;
+                          padding: 10px 0 0 50px;
+                          clear: left;
+                  }
+          aside{
+                float: left;
+                width: 30%;
+
+              h1{
+                 text-align: center;
+                 border-bottom: 2px solid white;
+               }
+               h3{
+                 padding-left: 15px;
+               }
+
+        }
+
+      }
+
+
+}
+}

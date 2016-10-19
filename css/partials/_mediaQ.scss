@@ -1,0 +1,99 @@
+@media(max-width: 420px){
+  nav{
+    .desktop{
+            display: none;
+            }
+              .dropbtn {
+                      color: white;
+                      border: none;
+                      cursor: pointer;
+                      text-align: center;
+                    }
+
+                    .dropdown {
+                        position: relative;
+                        display: inline-block;
+                    }
+                    .dropContent {
+                                   display: none;
+                                   position: absolute;
+                                   width: 100%;
+                                   li{
+                                      display: block;
+                                      width: 100%;
+                                      background: black;
+                                      padding: 5px 0px 15px 0px;
+                                      .fa{
+                                          font-size: 40px;
+                                          padding:0px  50px 0px 20px;
+                                          }
+                                      }
+                                    }
+
+                    .dropdown:hover .dropContent {
+                                          display: block;
+                                        }
+
+                    .dropdown:hover .dropbtn {
+                                              background-color: #3e8e41;
+                                            }
+
+
+  }
+  header{
+         background: #00AD82;
+    article{
+            padding-left: 0;
+            section{
+                    .codepen{
+                            display: block;
+                            width: 95%;
+                            padding-left: 10px;
+                    }
+            aside{
+                  display: block;
+                  width: 100%;
+          }
+        }
+      }
+  }
+  main{
+      article{
+              aside{
+                    display: block;
+                    width: 80%;
+                    padding-left: 40px;
+
+                    img{
+                        width: 100%;
+                        padding-left: 0px;
+                    }
+              }
+              section{
+                      display:block;
+                      width: 100%;
+                      padding: 30px 0 0 0px;
+
+                      img{
+                          width: 100%;
+                          border: 3px solid black;
+                      }
+                      .leftCol{
+                               padding-right: 0px;
+                               width: 100%;
+                               display: block;
+                      }
+                      .rightCol{
+                                padding-top: 20px;
+                                width: 100%;
+                                display: block;
+                      }
+              }
+      }
+  }
+
+}
+@media(min-width: 767px)and(max-width: 1200px){
+
+
+}

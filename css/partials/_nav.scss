@@ -1,0 +1,39 @@
+nav{
+  background: black;
+  border-bottom: 2px solid white;
+  position: fixed;
+  width: 100%;
+    ul{
+            list-style-type: none;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+      li{
+        display: inline-block;
+        width: 24%;
+        text-align: center;
+        padding: 11px 5px 10px 6px;
+        a{
+          text-decoration: none;
+          color: white;
+          font-size: 23px;
+        }
+        a:hover{
+                color: #00AD82;
+        }
+        .fa{
+            padding-right: 25px;
+
+        }
+      }
+      .active{
+              background: #348099;
+              a{
+                color: lightgray;
+              }
+      }
+    }
+    .mobile{
+            display: none;
+    }
+}
