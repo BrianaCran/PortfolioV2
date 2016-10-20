@@ -18,6 +18,7 @@
                                    display: none;
                                    position: absolute;
                                    width: 100%;
+
                                    li{
                                       display: block;
                                       width: 100%;
@@ -29,19 +30,11 @@
                                           }
                                       }
                                     }
-
-                    .dropdown:hover .dropContent {
-                                          display: block;
-                                        }
-
-                    .dropdown:hover .dropbtn {
-                                              background-color: #3e8e41;
-                                            }
-
-
+                  .dropdown:hover .dropContent {
+                                                  display: block;
+                                                  }
   }
   header{
-         background: #00AD82;
     article{
             padding-left: 0;
             section{
@@ -53,6 +46,7 @@
             aside{
                   display: block;
                   width: 100%;
+                  padding: 0;
           }
         }
       }
@@ -63,7 +57,6 @@
                     display: block;
                     width: 80%;
                     padding-left: 40px;
-
                     img{
                         width: 100%;
                         padding-left: 0px;
@@ -73,7 +66,6 @@
                       display:block;
                       width: 100%;
                       padding: 30px 0 0 0px;
-
                       img{
                           width: 100%;
                           border: 3px solid black;
@@ -91,7 +83,47 @@
               }
       }
   }
+  footer{
+          h2,p{
+            padding-left: 30px;
+           }
+         .footerLeft,.footerMiddle,.footerRight{
+                                                display: block;
+                                                width: 100%;
+                                                padding:5px 0 10px 0px;
+                                                form{
+                                                     padding-left: 30px;
+                                                     p{
+                                                      padding: 0;
+                                                     }
+                                                }
+         }
+         .footerMiddle{
+                       .fa{
+                           padding: 10px 0 0 0;
+                           margin-left: 100px;
 
+                           animation: arrowHover 15s ease-in-out infinite alternate;
+                           -webkit-animation: arrowHover 15s ease-in-out infinite alternate;
+                           -moz-animation: arrowHover 15s ease-in-out infinite alternate;
+                           -o-animation: arrowHover 15s ease-in-out infinite alternate;
+                           @include arrowHoverMobile;
+                       }
+                       .fa-arrow-right{
+                                       display: none;
+                       }
+                       .fa-arrow-down{
+                                      display: block;
+                       }
+
+                     }
+         .button{
+                 padding: 20px;
+         }
+         .btnTwo{
+                 margin-left: 40px;
+         }
+  }
 }
 @media(min-width: 767px)and(max-width: 1200px){
 

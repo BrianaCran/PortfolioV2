@@ -1,0 +1,69 @@
+@mixin arrowHover{
+                  @keyframes arrowHover{
+                                        0%{transform: translateX(0%);}
+                                        20%{transform: translateX(15%);}
+                                        40%{transform: translateX(0%);}
+                                        60%{transform: translateX(15%);}
+                                        80%{transform: translateX(0%);}
+                                        100%{transform: translateX(15%);}
+                                      }
+                  @-o-keyframes arrowHover{
+                                            0%{transform: translateX(0%);}
+                                            20%{transform: translateX(15%);}
+                                            40%{transform: translateX(0%);}
+                                            60%{transform: translateX(15%);}
+                                            80%{transform: translateX(0%);}
+                                            100%{transform: translateX(15%);}
+                                          }
+                 @-moz-keyframes arrowHover{
+                                            0%{transform: translateX(0%);}
+                                            20%{transform: translateX(15%);}
+                                            40%{transform: translateX(0%);}
+                                            60%{transform: translateX(15%);}
+                                            80%{transform: translateX(0%);}
+                                            100%{transform: translateX(15%);}
+                                          }
+                 @-webkit-keyframes arrowHover{
+                                               0%{transform: translateX(0%);}
+                                               20%{transform: translateX(15%);}
+                                               40%{transform: translateX(0%);}
+                                               60%{transform: translateX(15%);}
+                                               80%{transform: translateX(0%);}
+                                               100%{transform: translateX(15%);}
+                                             }
+}
+
+@mixin arrowHoverMobile {
+                    @keyframes arrowHover{
+                                          0%{transform: translateY(0%);}
+                                          20%{transform: translateY(25%);}
+                                          40%{transform: translateY(0%);}
+                                          60%{transform: translateY(25%);}
+                                          80%{transform: translateY(0%);}
+                                          100%{transform: translateY(25%);}
+                                        }
+                    @-o-keyframes arrowHover{
+                                             0%{transform: translateY(0%);}
+                                             20%{transform: translateY(25%);}
+                                             40%{transform: translateY(0%);}
+                                             60%{transform: translateY(25%);}
+                                             80%{transform: translateY(0%);}
+                                             100%{transform: translateY(25%);}
+                                           }
+                    @-moz-keyframes arrowHover{
+                                               0%{transform: translateY(0%);}
+                                               20%{transform: translateY(25%);}
+                                               40%{transform: translateY(0%);}
+                                               60%{transform: translateY(25%);}
+                                               80%{transform: translateY(0%);}
+                                               100%{transform: translateY(25%);}
+                                             }
+                    @-webkit-keyframes arrowHover{
+                                                  0%{transform: translateY(0%);}
+                                                  20%{transform: translateY(25%);}
+                                                  40%{transform: translateY(0%);}
+                                                  60%{transform: translateY(25%);}
+                                                  80%{transform: translateY(0%);}
+                                                  100%{transform: translateY(25%);}
+                                                }
+}

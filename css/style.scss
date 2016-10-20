@@ -1,7 +1,9 @@
 @import "partials/normalize";
+@import "partials/mixin";
 @import "partials/nav";
 @import "partials/header";
 @import "partials/content";
+@import "partials/footer";
 
 body{
      width: 100%;
