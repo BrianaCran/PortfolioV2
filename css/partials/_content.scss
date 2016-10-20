@@ -13,6 +13,15 @@ main{
                       width: 70%;
                       padding-left: 60px;
                   }
+                  .arrow> *:nth-child(1){
+                                         left: 70px;
+                  }
+                  .arrow> *:nth-child(2){
+                                         left: 89px;
+                  }
+                  .arrow> *:nth-child(3){
+                                         left: 70px;
+                  }
 
             }
             section{
@@ -33,6 +42,14 @@ main{
                     .rightCol{
                               width: 48%;
                               display: inline-block;
+                    }
+                    ul{
+                       border: 3px solid black;
+                       padding-bottom: 10px;
+                       color: lightgray;
+                       li{
+                          line-height: 30px;
+                       }
                     }
             }
     }

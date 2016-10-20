@@ -410,7 +410,7 @@ header {
         padding-left: 15px; }
       header article aside img {
         width: 60%;
-        padding-left: 65px; }
+        padding-left: 90px; }
     header article section {
       clear: both; }
       header article section .codepen {
@@ -420,9 +420,11 @@ header {
         clear: left; }
         header article section .codepen h3 {
           line-height: 40px;
-          padding-top: 60px; }
+          padding: 60px 40px 0 0px; }
+        header article section .codepen p {
+          color: white; }
         header article section .codepen .fa {
-          font-size: 25px; }
+          font-size: 20px; }
 
 main {
   clear: both;
@@ -437,6 +439,12 @@ main {
       main article aside img {
         width: 70%;
         padding-left: 60px; }
+      main article aside .arrow > *:nth-child(1) {
+        left: 70px; }
+      main article aside .arrow > *:nth-child(2) {
+        left: 89px; }
+      main article aside .arrow > *:nth-child(3) {
+        left: 70px; }
     main article section {
       clear: left;
       display: inline-block;
@@ -452,6 +460,12 @@ main {
       main article section .rightCol {
         width: 48%;
         display: inline-block; }
+      main article section ul {
+        border: 3px solid black;
+        padding-bottom: 10px;
+        color: lightgray; }
+        main article section ul li {
+          line-height: 30px; }
 
 footer {
   background: black;

@@ -18,7 +18,7 @@ header{
                }
                img{
                    width: 60%;
-                   padding-left: 65px;
+                   padding-left: 90px;
                }
         }
           section{
@@ -30,10 +30,13 @@ header{
                           clear: left;
                           h3{
                              line-height: 40px;
-                             padding-top: 60px;
+                             padding: 60px 40px 0 0px;
+                          }
+                          p{
+                            color: white;
                           }
                           .fa{
-                              font-size: 25px;
+                              font-size: 20px;
                           }
                   }
       }
