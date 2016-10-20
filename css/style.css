@@ -408,6 +408,9 @@ header {
         border-bottom: 2px solid white; }
       header article aside h3 {
         padding-left: 15px; }
+      header article aside img {
+        width: 60%;
+        padding-left: 65px; }
     header article section {
       clear: both; }
       header article section .codepen {
@@ -415,6 +418,11 @@ header {
         width: 62%;
         padding: 10px 0 0 0px;
         clear: left; }
+        header article section .codepen h3 {
+          line-height: 40px;
+          padding-top: 60px; }
+        header article section .codepen .fa {
+          font-size: 25px; }
 
 main {
   clear: both;
