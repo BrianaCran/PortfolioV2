@@ -426,35 +426,41 @@ header {
         header article section .codepen .fa {
           font-size: 20px; }
 
-main {
+main, .projectInfo {
   clear: both;
   background: lightgray; }
-  main article {
+  main article, .projectInfo article {
     padding: 5px 30px 10px 30px; }
-    main article aside {
+    main article aside, .projectInfo article aside {
       float: left;
       width: 30%; }
-      main article aside h1 {
+      main article aside h1, .projectInfo article aside h1 {
         text-align: center; }
-      main article aside img {
+      main article aside img, .projectInfo article aside img {
         width: 70%;
         padding-left: 60px; }
-    main article section {
+    main article section, .projectInfo article section {
       clear: left;
       display: inline-block;
       width: 66%;
       padding: 30px 0 0 68px; }
-      main article section img {
+      main article section img, .projectInfo article section img {
         width: 100%;
-        border: 3px solid black; }
-      main article section ul {
+        border: 3px solid black;
+        cursor: pointer; }
+      main article section ul, .projectInfo article section ul {
         border: 3px solid black;
         padding-bottom: 10px; }
-        main article section ul li {
+        main article section ul li, .projectInfo article section ul li {
           line-height: 30px; }
 
 .projectInfo {
+  background: white;
   display: inline-block; }
+  .projectInfo #ptfg, .projectInfo #ptfgDetails {
+    display: none; }
+  .projectInfo #goodreads {
+    display: none; }
 
 footer {
   background: black;

@@ -1,4 +1,4 @@
-main{
+main,.projectInfo{
      clear:both;
      background: lightgray;
     article{
@@ -23,6 +23,7 @@ main{
                     img{
                         width: 100%;
                         border: 3px solid black;
+                        cursor: pointer;
                     }
                     ul{
                        border: 3px solid black;
@@ -35,7 +36,12 @@ main{
     }
 }
 .projectInfo{
+             background: white;
              display: inline-block;
-             #ptfg{
+             #ptfg,#ptfgDetails{
+               display: none;
+             }
+             #goodreads{
+               display: none;
              }
 }
