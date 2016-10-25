@@ -568,7 +568,7 @@ body {
   body p {
     font-family: 'Open Sans', sans-serif; }
 
-@media (max-width: 420px) {
+@media (min-width: 400px) and (max-width: 768px) {
   nav .desktop {
     display: none; }
   nav .dropbtn {
@@ -701,6 +701,54 @@ body {
     display: none; }
   footer .footerMiddle .fa-arrow-down {
     display: block; }
+  footer .button {
+    padding: 20px; }
+  footer .btnTwo {
+    margin-left: 40px; } }
+@media (min-width: 769px) and (max-width: 1200px) {
+  nav .desktop {
+    display: block; }
+    nav .desktop li {
+      width: 23%; }
+
+  header article {
+    display: inline-block; }
+    header article section .codepen {
+      width: 55%;
+      padding-left: 25px; }
+    header article section aside {
+      width: 40%;
+      padding: 0;
+      overflow: auto;
+      height: 310px; }
+
+  main article aside {
+    display: inline-block; }
+    main article aside img {
+      width: 100%;
+      padding-left: 0px; }
+  main article section {
+    padding: 30px 0 0 30px; }
+    main article section img {
+      width: 100%;
+      border: 3px solid black; }
+    main article section .leftCol {
+      padding-right: 0px;
+      width: 100%;
+      display: block; }
+    main article section .rightCol {
+      padding-top: 20px;
+      width: 100%;
+      display: block; }
+
+  footer h2, footer p {
+    padding-left: 30px; }
+  footer .footerLeft, footer .footerMiddle, footer .footerRight {
+    padding: 5px 0 10px 0px; }
+    footer .footerLeft form, footer .footerMiddle form, footer .footerRight form {
+      padding-left: 30px; }
+      footer .footerLeft form p, footer .footerMiddle form p, footer .footerRight form p {
+        padding: 0; }
   footer .button {
     padding: 20px; }
   footer .btnTwo {

@@ -1,4 +1,4 @@
-@media(max-width: 420px){
+@media(min-width: 400px)and(max-width: 768px){
   nav{
     .desktop{
             display: none;
@@ -115,7 +115,6 @@
                        .fa-arrow-down{
                                       display: block;
                        }
-
                      }
          .button{
                  padding: 20px;
@@ -125,7 +124,79 @@
          }
   }
 }
-@media(min-width: 767px)and(max-width: 1200px){
 
-
+@media(min-width: 769px)and(max-width: 1200px){
+  nav{
+    .desktop{
+            display: block;
+            li{
+               width: 23%;
+              }
+            }
+          }
+  header{
+         article{
+           display: inline-block;
+                section{
+                        .codepen{
+                                 width: 55%;
+                                 padding-left: 25px;
+                            }
+                    aside{
+                          width: 40%;
+                          padding: 0;
+                          overflow: auto;
+                          height: 310px;
+                        }
+                      }
+                  }
+          }
+    main{
+         article{
+                 aside{
+                            display: inline-block;
+                            img{
+                                width: 100%;
+                                padding-left: 0px;
+                            }
+                      }
+                      section{
+                              padding: 30px 0 0 30px;
+                              img{
+                                  width: 100%;
+                                  border: 3px solid black;
+                              }
+                              .leftCol{
+                                       padding-right: 0px;
+                                       width: 100%;
+                                       display: block;
+                              }
+                              .rightCol{
+                                        padding-top: 20px;
+                                        width: 100%;
+                                        display: block;
+                              }
+                      }
+              }
+          }
+  footer{
+          h2,p{
+                padding-left: 30px;
+                   }
+                 .footerLeft,.footerMiddle,.footerRight{
+                                                        padding:5px 0 10px 0px;
+                                                        form{
+                                                             padding-left: 30px;
+                                                             p{
+                                                              padding: 0;
+                                                             }
+                                                        }
+                 }
+                 .button{
+                         padding: 20px;
+                 }
+                 .btnTwo{
+                         margin-left: 40px;
+                 }
+          }
 }
