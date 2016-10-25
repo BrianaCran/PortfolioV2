@@ -11,7 +11,7 @@ footer{
            .fa{
                font-size: 40px;
                padding:10px 0 0 80px;
-               
+
                animation: arrowHover 15s ease-in-out infinite alternate;
                -webkit-animation: arrowHover 15s ease-in-out infinite alternate;
                -moz-animation: arrowHover 15s ease-in-out infinite alternate;
@@ -24,21 +24,21 @@ footer{
            }
        }
        .footerLeft{
-                    width: 30%;
-                    float: left;
-                    padding: 0 25px 0 55px;
-       }
+                   width: 30%;
+                   float: left;
+                   padding: 0 25px 0 55px;
+                  }
        .footerMiddle{
                      float: left;
                      width: 30%;
                      padding-top: 15px;
-       }
+                  }
        .footerRight{
-                    clear: left;
-                    display: inline-block;
-                    width: 30%;
-                    padding-left: 28px;
-       }
+                     clear: left;
+                     display: inline-block;
+                     width: 30%;
+                     padding-left: 28px;
+                  }
        .button{
                background: #348099;
                color: white;
