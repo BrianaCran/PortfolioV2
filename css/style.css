@@ -428,7 +428,7 @@ header {
 
 main {
   clear: both;
-  background: #348099; }
+  background: lightgray; }
   main article {
     padding: 5px 30px 10px 30px; }
     main article aside {
@@ -439,12 +439,6 @@ main {
       main article aside img {
         width: 70%;
         padding-left: 60px; }
-      main article aside .arrow > *:nth-child(1) {
-        left: 70px; }
-      main article aside .arrow > *:nth-child(2) {
-        left: 89px; }
-      main article aside .arrow > *:nth-child(3) {
-        left: 70px; }
     main article section {
       clear: left;
       display: inline-block;
@@ -455,10 +449,12 @@ main {
         border: 3px solid black; }
       main article section ul {
         border: 3px solid black;
-        padding-bottom: 10px;
-        color: lightgray; }
+        padding-bottom: 10px; }
         main article section ul li {
           line-height: 30px; }
+
+.projectInfo {
+  display: inline-block; }
 
 footer {
   background: black;
@@ -818,12 +814,7 @@ body {
       padding-left: 25px; }
     header article section aside {
       width: 40%;
-      padding: 0;
-      overflow: auto;
-      height: 310px; }
-      header article section aside img {
-        width: 90%;
-        padding-left: 20px; }
+      padding: 0; }
 
   main article aside {
     display: inline-block; }

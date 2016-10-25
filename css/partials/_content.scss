@@ -1,6 +1,6 @@
 main{
      clear:both;
-     background: #348099;
+     background: lightgray;
     article{
             padding: 5px 30px 10px 30px;
             aside{
@@ -13,16 +13,6 @@ main{
                       width: 70%;
                       padding-left: 60px;
                   }
-                  .arrow> *:nth-child(1){
-                                         left: 70px;
-                  }
-                  .arrow> *:nth-child(2){
-                                         left: 89px;
-                  }
-                  .arrow> *:nth-child(3){
-                                         left: 70px;
-                  }
-
             }
             section{
                     clear: left;
@@ -37,11 +27,15 @@ main{
                     ul{
                        border: 3px solid black;
                        padding-bottom: 10px;
-                       color: lightgray;
                        li{
                           line-height: 30px;
                        }
                     }
             }
     }
+}
+.projectInfo{
+             display: inline-block;
+             #ptfg{
+             }
 }
