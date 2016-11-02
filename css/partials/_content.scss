@@ -1,6 +1,6 @@
-main,.projectInfo{
-     clear:both;
-     background: lightgray;
+main,#project{
+              clear:both;
+              background: lightgray;
     article{
             padding: 5px 30px 10px 30px;
             aside{
@@ -11,19 +11,18 @@ main,.projectInfo{
                   }
                   img{
                       width: 70%;
-                      padding-left: 60px;
+                      max-width: 300px;
                   }
             }
             section{
                     clear: left;
                     display: inline-block;
-                    width: 66%;
-                    padding: 30px 0 0 68px;
+                    width: 70%;
+                    padding: 30px 0 0 0px;
 
                     img{
                         width: 100%;
                         border: 3px solid black;
-                        cursor: pointer;
                     }
                     ul{
                        border: 3px solid black;
@@ -35,13 +34,22 @@ main,.projectInfo{
             }
     }
 }
-.projectInfo{
+#project{
+             padding: 50px 0 30px 0;
              background: white;
              display: inline-block;
-             #ptfg,#ptfgDetails{
-               display: none;
+             a{
+               padding:0 0 10px 30px;
              }
-             #goodreads{
-               display: none;
+             .left,.right{
+                          display: inline-block;
+                          width: 45%;
              }
+             .right,p,a,h3{
+                      padding-left: 15px;
+             }
+             #ptfg,#ptfgDetails,#goodreads,#grDetails{
+                                    display:none;
+             }
+
 }

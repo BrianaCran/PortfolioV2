@@ -426,40 +426,45 @@ header {
         header article section .codepen .fa {
           font-size: 20px; }
 
-main, .projectInfo {
+main, #project {
   clear: both;
   background: lightgray; }
-  main article, .projectInfo article {
+  main article, #project article {
     padding: 5px 30px 10px 30px; }
-    main article aside, .projectInfo article aside {
+    main article aside, #project article aside {
       float: left;
       width: 30%; }
-      main article aside h1, .projectInfo article aside h1 {
+      main article aside h1, #project article aside h1 {
         text-align: center; }
-      main article aside img, .projectInfo article aside img {
+      main article aside img, #project article aside img {
         width: 70%;
-        padding-left: 60px; }
-    main article section, .projectInfo article section {
+        max-width: 300px; }
+    main article section, #project article section {
       clear: left;
       display: inline-block;
-      width: 66%;
-      padding: 30px 0 0 68px; }
-      main article section img, .projectInfo article section img {
+      width: 70%;
+      padding: 30px 0 0 0px; }
+      main article section img, #project article section img {
         width: 100%;
-        border: 3px solid black;
-        cursor: pointer; }
-      main article section ul, .projectInfo article section ul {
+        border: 3px solid black; }
+      main article section ul, #project article section ul {
         border: 3px solid black;
         padding-bottom: 10px; }
-        main article section ul li, .projectInfo article section ul li {
+        main article section ul li, #project article section ul li {
           line-height: 30px; }
 
-.projectInfo {
+#project {
+  padding: 50px 0 30px 0;
   background: white;
   display: inline-block; }
-  .projectInfo #ptfg, .projectInfo #ptfgDetails {
-    display: none; }
-  .projectInfo #goodreads {
+  #project a {
+    padding: 0 0 10px 30px; }
+  #project .left, #project .right {
+    display: inline-block;
+    width: 45%; }
+  #project .right, #project p, #project a, #project h3 {
+    padding-left: 15px; }
+  #project #ptfg, #project #ptfgDetails, #project #goodreads, #project #grDetails {
     display: none; }
 
 footer {
@@ -562,6 +567,10 @@ body {
     font-family: 'Kaushan Script', cursive; }
   body p {
     font-family: 'Open Sans', sans-serif; }
+  body a {
+    text-decoration: none;
+    color: #00AD82;
+    font-size: 23px; }
 
 @media (min-width: 400px) and (max-width: 768px) {
   nav .desktop {
@@ -593,34 +602,34 @@ body {
     padding-left: 0; }
     header article section .codepen {
       display: block;
-      width: 95%;
-      padding-left: 10px; }
+      width: 92%;
+      padding-left: 20px; }
       header article section .codepen h3, header article section .codepen p {
-        padding: 0 0 0 20px; }
+        padding: 0 10px 0 20px; }
     header article section aside {
       display: block;
       width: 100%;
       padding: 0; }
 
-  main article aside {
+  main article aside, #project article aside {
     display: block;
-    width: 80%;
-    padding-left: 40px; }
-    main article aside img {
+    width: 100%;
+    padding-left: 10px; }
+    main article aside img, #project article aside img {
       width: 100%;
-      padding-left: 0px; }
-  main article section {
+      padding-left: 4%; }
+  main article section, #project article section {
     display: block;
     width: 100%;
     padding: 30px 0 0 0px; }
-    main article section img {
+    main article section img, #project article section img {
       width: 100%;
       border: 3px solid black; }
-    main article section .leftCol {
+    main article section .leftCol, #project article section .leftCol {
       padding-right: 0px;
       width: 100%;
       display: block; }
-    main article section .rightCol {
+    main article section .rightCol, #project article section .rightCol {
       padding-top: 20px;
       width: 100%;
       display: block; }
@@ -722,17 +731,30 @@ body {
         width: 90%;
         padding-left: 20px; }
 
-  main article aside {
+  main article aside, #project article aside {
     display: inline-block; }
-    main article aside img {
+    main article aside img, #project article aside img {
       width: 100%;
       padding-left: 0px; }
-  main article section {
-    padding: 30px 0 0 31px; }
-    main article section img {
-      width: 100%;
-      border: 3px solid black; } }
+  main article section img, #project article section img {
+    width: 83%;
+    border: 3px solid black;
+    margin-left: 16.5%; }
+  main article section .leftCol, #project article section .leftCol {
+    padding-bottom: 20px; }
+
+  #project .right, #project .left {
+    display: block;
+    width: 100%; }
+  #project p {
+    width: 100%; }
+  #project #ptfgDetails, #project #grDetails {
+    overflow-x: auto;
+    height: 900px; } }
 @media (max-width: 789px) {
+  #project #ptfgDetails, #project #grDetails {
+    height: 1100px; }
+
   .footerMiddle p {
     padding-left: 25px; }
   .footerMiddle .fa {
@@ -799,6 +821,9 @@ body {
   .footerMiddle .fa-arrow-down {
     display: block; } }
 @media (min-width: 790px) {
+  #project a {
+    display: inline-block; }
+
   footer h2, footer p {
     padding-left: 30px; }
   footer .footerLeft, footer .footerMiddle, footer .footerRight {
@@ -822,21 +847,26 @@ body {
       width: 40%;
       padding: 0; }
 
-  main article aside {
+  main article aside, #project article aside {
     display: inline-block; }
-    main article aside img {
+    main article aside img, #project article aside img {
       width: 100%;
-      padding-left: 0px; }
-  main article section {
-    padding: 30px 0 0 35px; }
-    main article section img {
+      padding-left: 15%; }
+  main article section, #project article section {
+    padding: 30px 0 0 0px; }
+    main article section img, #project article section img {
       width: 100%;
       border: 3px solid black; }
-    main article section .leftCol, main article section .rightCol {
-      width: 48%;
+    main article section .leftCol, main article section .rightCol, #project article section .leftCol, #project article section .rightCol {
+      width: 40%;
       display: inline-block; }
-    main article section .leftCol {
-      padding: 0 8px 0 15px; }
+    main article section .leftCol, #project article section .leftCol {
+      padding: 0 8px 5px 15px;
+      margin-left: 15%; }
+
+  #project #ptfgDetails, #project #grDetails {
+    height: 650px;
+    overflow-x: auto; }
 
   footer .footerLeft {
     width: 30%;
