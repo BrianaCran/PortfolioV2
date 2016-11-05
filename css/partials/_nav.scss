@@ -10,7 +10,6 @@ nav{
             margin: 0;
       li{
         display: inline-block;
-        width: 24%;
         text-align: center;
         padding: 11px 5px 10px 6px;
         a{
@@ -23,13 +22,12 @@ nav{
         }
         .fa{
             padding-right: 25px;
-
         }
       }
       .active{
               background: #348099;
               a{
-                color: lightgray;
+                color: #e5e5e5;
               }
       }
     }

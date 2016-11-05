@@ -376,7 +376,6 @@ nav {
     margin: 0; }
     nav ul li {
       display: inline-block;
-      width: 24%;
       text-align: center;
       padding: 11px 5px 10px 6px; }
       nav ul li a {
@@ -390,7 +389,7 @@ nav {
     nav ul .active {
       background: #348099; }
       nav ul .active a {
-        color: lightgray; }
+        color: #e5e5e5; }
   nav .mobile {
     display: none; }
 
@@ -402,35 +401,30 @@ header {
     header article aside {
       float: left;
       width: 30%;
-      padding: 0 50px 0 35px; }
+      padding: 0 0px 0 10px; }
       header article aside h1 {
-        text-align: center;
+        padding-left: 20%;
         border-bottom: 2px solid white; }
       header article aside h3 {
         padding-left: 15px; }
       header article aside img {
         width: 60%;
-        padding-left: 25%; }
-    header article section {
-      clear: both; }
-      header article section a {
+        padding-left: 12%; }
+    header article .codepen {
+      clear: left;
+      display: inline-block;
+      padding: 10px 0 0 20px; }
+      header article .codepen h3 {
+        line-height: 40px;
+        padding: 60px 40px 0 0px; }
+      header article .codepen p, header article .codepen .fa {
         color: white; }
-      header article section .codepen {
-        display: inline-block;
-        width: 62%;
-        padding: 10px 0 0 0px;
-        clear: left; }
-        header article section .codepen h3 {
-          line-height: 40px;
-          padding: 60px 40px 0 0px; }
-        header article section .codepen p {
-          color: white; }
-        header article section .codepen .fa {
-          font-size: 20px; }
+      header article .codepen .fa {
+        font-size: 25px; }
 
 main, #project {
   clear: both;
-  background: lightgray; }
+  background: #e5e5e5; }
   main article, #project article {
     padding: 5px 30px 10px 30px; }
     main article aside, #project article aside {
@@ -449,10 +443,12 @@ main, #project {
       padding: 30px 0 0 0px; }
       main article section img, #project article section img {
         width: 100%;
-        border: 3px solid black; }
+        border: 3px solid black;
+        margin-bottom: 20px; }
       main article section ul, #project article section ul {
         border: 3px solid black;
-        padding-bottom: 10px; }
+        height: 200px;
+        margin-bottom: 25px; }
         main article section ul li, #project article section ul li {
           line-height: 30px; }
 
@@ -465,11 +461,8 @@ main, #project {
     width: 45%; }
   #project .right, #project p, #project a, #project h3 {
     padding-left: 15px; }
-  #project a {
-    clear: both; }
   #project #ptfg, #project #ptfgDetails, #project #goodreads, #project #grDetails,
-  #project #scoundrels, #project #sDetails, #project #branchless, #project #bDetails {
-    display: none; }
+  #project #scoundrels, #project #sDetails, #project #branchless, #project #bDetails,
   #project #grDetails .tabletMobile {
     display: none; }
 
@@ -606,41 +599,34 @@ body {
   nav .dropdown:hover .dropContent {
     display: block; }
 
-  header article {
-    padding-left: 0; }
-    header article section .codepen {
-      display: block;
-      width: 92%;
-      padding-left: 20px; }
-      header article section .codepen h3, header article section .codepen p {
-        padding: 0 10px 0 20px; }
-    header article section aside {
-      display: block;
-      width: 100%;
-      padding: 0; }
+  header article .codepen {
+    display: block;
+    width: 91%;
+    padding-left: 20px; }
+    header article .codepen h3, header article .codepen p {
+      padding: 0 10px 0 20px; }
+  header article aside {
+    display: block;
+    width: 100%; }
+    header article aside h3, header article aside p {
+      padding: 0 2% 0 5px; }
+    header article aside img {
+      padding-left: 15%; }
 
-  main article aside, #project article aside {
+  main article aside, main article section, #project article aside, #project article section {
     display: block;
+    width: 100%; }
+  main article aside img, #project article aside img {
     width: 100%;
-    padding-left: 10px; }
-    main article aside img, #project article aside img {
-      width: 100%;
-      padding-left: 4%; }
+    padding-left: 8%; }
   main article section, #project article section {
-    display: block;
-    width: 100%;
     padding: 30px 0 0 0px; }
-    main article section img, #project article section img {
-      width: 100%;
-      border: 3px solid black; }
-    main article section .leftCol, #project article section .leftCol {
+    main article section img, main article section .leftCol, main article section .rightCol, #project article section img, #project article section .leftCol, #project article section .rightCol {
       padding-right: 0px;
       width: 100%;
       display: block; }
     main article section .rightCol, #project article section .rightCol {
-      padding-top: 20px;
-      width: 100%;
-      display: block; }
+      padding-top: 20px; }
 
   #project #grDetails .desktop {
     display: none; }
@@ -732,28 +718,25 @@ body {
     nav .desktop li {
       width: 23%; }
 
-  header article {
-    display: inline-block; }
-    header article section .codepen {
-      width: 55%;
-      padding-left: 25px; }
-    header article section aside {
-      width: 40%;
-      padding: 0;
-      overflow: auto;
-      height: 310px; }
-      header article section aside img {
-        width: 90%;
-        padding-left: 20px; }
+  header article .codepen {
+    width: 55%; }
+  header article aside {
+    width: 40%;
+    overflow: auto;
+    height: 310px; }
+    header article aside img {
+      width: 90%;
+      padding-left: 20px; }
 
   main article aside, #project article aside {
     display: inline-block; }
     main article aside img, #project article aside img {
-      width: 100%;
-      padding-left: 0px; }
+      width: 100%; }
+  main article section ul, #project article section ul {
+    width: 70%;
+    margin-left: 16.5%; }
   main article section img, #project article section img {
     width: 83%;
-    border: 3px solid black;
     margin-left: 16.5%; }
   main article section .leftCol, #project article section .leftCol {
     padding-bottom: 20px; }
@@ -847,10 +830,8 @@ body {
   #project a {
     display: inline-block; }
 
-  footer h2, footer p {
-    padding-left: 30px; }
   footer .footerLeft, footer .footerMiddle, footer .footerRight {
-    padding: 5px 0 10px 0px; }
+    padding: 5px 0 10px 10px; }
   footer .button {
     padding: 20px; }
   footer .btnTwo {
@@ -861,14 +842,10 @@ body {
     nav .desktop li {
       width: 23%; }
 
-  header article {
-    display: inline-block; }
-    header article section .codepen {
-      width: 55%;
-      padding-left: 25px; }
-    header article section aside {
-      width: 40%;
-      padding: 0; }
+  header article .codepen {
+    width: 55%; }
+  header article aside {
+    width: 40%; }
 
   main article aside, #project article aside {
     display: inline-block; }

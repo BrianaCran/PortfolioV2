@@ -1,6 +1,6 @@
 main,#project{
               clear:both;
-              background: lightgray;
+              background: #e5e5e5;
     article{
             padding: 5px 30px 10px 30px;
             aside{
@@ -25,14 +25,16 @@ main,#project{
                     img{
                         width: 100%;
                         border: 3px solid black;
+                        margin-bottom: 20px
                     }
                     ul{
                        border: 3px solid black;
-                       padding-bottom: 10px;
+                       height: 200px;
+                       margin-bottom: 25px;
                        li{
                           line-height: 30px;
                        }
-                    }
+                     }
             }
     }
 }
@@ -46,19 +48,11 @@ main,#project{
                           width: 45%;
              }
              .right,p,a,h3{
-                      padding-left: 15px;
-             }
-             a{
-               clear: both;
+                           padding-left: 15px;
              }
              #ptfg,#ptfgDetails,#goodreads,#grDetails,
-             #scoundrels,#sDetails,#branchless,#bDetails{
-                                                          display:none;
-             }
-             #grDetails{
-                       .tabletMobile{
-                                     display: none;
-                       }
-             }
-
+             #scoundrels,#sDetails,#branchless,#bDetails,
+             #grDetails .tabletMobile{
+                                      display:none;
+                                     }
 }
