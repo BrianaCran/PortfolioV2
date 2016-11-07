@@ -377,7 +377,8 @@ nav {
     nav ul li {
       display: inline-block;
       text-align: center;
-      padding: 11px 5px 10px 6px; }
+      padding: 11px 5px 10px 6px;
+      width: 23%; }
       nav ul li a {
         text-decoration: none;
         color: white;
@@ -410,17 +411,16 @@ header {
       header article aside img {
         width: 60%;
         padding-left: 12%; }
-    header article .codepen {
+    header article .codepen, header article .mail {
       clear: left;
+      width: 55%;
       display: inline-block;
       padding: 10px 0 0 20px; }
-      header article .codepen h3 {
+      header article .codepen h3, header article .mail h3 {
         line-height: 40px;
         padding: 60px 40px 0 0px; }
-      header article .codepen p, header article .codepen .fa {
+      header article .codepen p, header article .codepen .fa, header article .mail p, header article .mail .fa {
         color: white; }
-      header article .codepen .fa {
-        font-size: 25px; }
 
 main, #project {
   clear: both;
@@ -443,12 +443,12 @@ main, #project {
       padding: 30px 0 0 0px; }
       main article section img, #project article section img {
         width: 100%;
-        border: 3px solid black;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        border: 3px solid black; }
       main article section ul, #project article section ul {
-        border: 3px solid black;
         height: 200px;
-        margin-bottom: 25px; }
+        margin-bottom: 25px;
+        border: 3px solid black; }
         main article section ul li, #project article section ul li {
           line-height: 30px; }
 
@@ -459,19 +459,25 @@ main, #project {
   #project .left, #project .right {
     display: inline-block;
     width: 45%; }
+  #project a {
+    font-size: 18px; }
   #project .right, #project p, #project a, #project h3 {
     padding-left: 15px; }
   #project #ptfg, #project #ptfgDetails, #project #goodreads, #project #grDetails,
   #project #scoundrels, #project #sDetails, #project #branchless, #project #bDetails,
   #project #grDetails .tabletMobile {
     display: none; }
+  #project #ptfgDetails, #project #grDetails,
+  #project #sDetails, #project #bDetails {
+    height: 650px;
+    overflow-x: auto; }
 
 footer {
   background: black;
   display: inline-block;
   width: 100%;
   padding: 10px 0 20px 0px; }
-  footer h2, footer p {
+  footer h2, footer p, footer .button:hover {
     color: #00AD82; }
   footer span {
     color: white; }
@@ -536,19 +542,19 @@ footer {
     transform: translateX(15%); } }
     footer span .fa-arrow-down {
       display: none; }
+  footer .footerLeft, footer .footerMiddle {
+    float: left; }
   footer .footerLeft {
-    width: 30%;
-    float: left;
-    padding: 0 25px 0 55px; }
+    width: 40%;
+    padding-left: 30px; }
   footer .footerMiddle {
-    float: left;
-    width: 30%;
-    padding-top: 15px; }
+    padding: 15px 0 0 0px; }
+  footer .footerMiddle, footer .footerRight {
+    width: 25%; }
   footer .footerRight {
     clear: left;
     display: inline-block;
-    width: 30%;
-    padding-left: 28px; }
+    padding-left: 51px; }
   footer .button {
     background: #348099;
     color: white;
@@ -557,21 +563,18 @@ footer {
   footer .btnTwo {
     margin-left: 20px; }
   footer .button:hover {
-    background: white;
-    color: #00AD82; }
+    background: white; }
 
-body {
-  width: 100%; }
-  body h1, body h2 {
-    font-family: 'Kaushan Script', cursive; }
-  body p {
-    font-family: 'Open Sans', sans-serif; }
-  body a {
-    text-decoration: none;
-    color: #00AD82;
-    font-size: 23px; }
-  body .me {
-    max-width: 300px; }
+body h1, body h2 {
+  font-family: 'Kaushan Script', cursive; }
+body p, body a {
+  font-family: 'Open Sans', sans-serif; }
+body a, body .fa {
+  text-decoration: none;
+  color: #00AD82;
+  font-size: 23px; }
+body .me {
+  max-width: 300px; }
 
 @media (min-width: 400px) and (max-width: 768px) {
   nav .desktop {
@@ -599,11 +602,11 @@ body {
   nav .dropdown:hover .dropContent {
     display: block; }
 
-  header article .codepen {
+  header article .codepen, header article .mail {
     display: block;
     width: 91%;
     padding-left: 20px; }
-    header article .codepen h3, header article .codepen p {
+    header article .codepen h3, header article .codepen p, header article .mail h3, header article .mail p {
       padding: 0 10px 0 20px; }
   header article aside {
     display: block;
@@ -619,14 +622,12 @@ body {
   main article aside img, #project article aside img {
     width: 100%;
     padding-left: 8%; }
-  main article section, #project article section {
-    padding: 30px 0 0 0px; }
-    main article section img, main article section .leftCol, main article section .rightCol, #project article section img, #project article section .leftCol, #project article section .rightCol {
-      padding-right: 0px;
-      width: 100%;
-      display: block; }
-    main article section .rightCol, #project article section .rightCol {
-      padding-top: 20px; }
+  main article section img, main article section .leftCol, main article section .rightCol, #project article section img, #project article section .leftCol, #project article section .rightCol {
+    padding-right: 0px;
+    width: 100%;
+    display: block; }
+  main article section .rightCol, #project article section .rightCol {
+    padding-top: 20px; }
 
   #project #grDetails .desktop {
     display: none; }
@@ -634,6 +635,9 @@ body {
     display: block; }
   #project #grDetails a {
     padding: 0; }
+  #project #ptfgDetails img, #project #grDetails img,
+  #project #sDetails img, #project #bDetails img {
+    width: 95%; }
 
   footer h2, footer p {
     padding-left: 30px; }
@@ -713,13 +717,6 @@ body {
   footer .btnTwo {
     margin-left: 40px; } }
 @media (min-width: 769px) and (max-width: 1200px) {
-  nav .desktop {
-    display: block; }
-    nav .desktop li {
-      width: 23%; }
-
-  header article .codepen {
-    width: 55%; }
   header article aside {
     width: 40%;
     overflow: auto;
@@ -746,26 +743,20 @@ body {
     width: 100%; }
   #project p {
     width: 100%; }
+  #project a {
+    display: inline-block; }
   #project #ptfgDetails, #project #grDetails,
   #project #sDetails, #project #bDetails {
     overflow-x: auto;
-    height: 900px; }
+    height: 1000px; }
   #project #grDetails .desktop {
     display: none; }
   #project #grDetails .tabletMobile {
     display: block; }
   #project #grDetails a {
-    padding: 0; } }
-@media (max-width: 789px) {
-  #project #ptfgDetails, #project #grDetails,
-  #project #sDetails, #project #bDetails {
-    height: 1100px; }
+    padding: 0; }
 
-  .footerMiddle p {
-    padding-left: 25px; }
-  .footerMiddle .fa {
-    padding: 10px 0 0 0;
-    margin-left: 100px;
+  footer .footerMiddle .fa {
     animation: arrowHover 15s ease-in-out infinite alternate;
     -webkit-animation: arrowHover 15s ease-in-out infinite alternate;
     -moz-animation: arrowHover 15s ease-in-out infinite alternate;
@@ -822,65 +813,28 @@ body {
       transform: translateY(0%); }
     100% {
       transform: translateY(25%); } }
-  .footerMiddle .fa-arrow-right {
+  footer .footerMiddle .fa-arrow-right {
     display: none; }
-  .footerMiddle .fa-arrow-down {
-    display: block; } }
-@media (min-width: 790px) {
-  #project a {
-    display: inline-block; }
-
-  footer .footerLeft, footer .footerMiddle, footer .footerRight {
-    padding: 5px 0 10px 10px; }
-  footer .button {
-    padding: 20px; }
-  footer .btnTwo {
-    margin-left: 40px; } }
-@media (min-width: 1201px) {
-  nav .desktop {
+  footer .footerMiddle .fa-arrow-down {
     display: block; }
-    nav .desktop li {
-      width: 23%; }
-
-  header article .codepen {
-    width: 55%; }
+  footer .footerMiddle, footer .footerRight {
+    margin-right: 150px;
+    float: right; }
+  footer .footerRight {
+    display: block; } }
+@media (min-width: 1201px) {
   header article aside {
     width: 40%; }
 
   main article aside, #project article aside {
     display: inline-block; }
     main article aside img, #project article aside img {
-      width: 100%;
       padding-left: 15%; }
-  main article section, #project article section {
-    padding: 30px 0 0 0px; }
-    main article section img, #project article section img {
-      width: 100%;
-      border: 3px solid black; }
-    main article section .leftCol, main article section .rightCol, #project article section .leftCol, #project article section .rightCol {
-      width: 40%;
-      display: inline-block; }
-    main article section .leftCol, #project article section .leftCol {
-      padding: 0 8px 5px 15px;
-      margin-left: 15%; }
-
-  #project #ptfgDetails, #project #grDetails,
-  #project #sDetails, #project #bDetails {
-    height: 650px;
-    overflow-x: auto; }
-
-  footer .footerLeft {
-    width: 30%;
-    float: left;
-    padding: 0 25px 0 55px; }
-  footer .footerMiddle {
-    float: left;
-    width: 30%;
-    padding-top: 15px; }
-  footer .footerRight {
-    clear: left;
-    display: inline-block;
-    width: 30%;
-    padding-left: 28px; } }
+  main article section .leftCol, main article section .rightCol, #project article section .leftCol, #project article section .rightCol {
+    width: 40%;
+    display: inline-block; }
+  main article section .leftCol, #project article section .leftCol {
+    padding: 0 8px 5px 15px;
+    margin-left: 15%; } }
 
 /*# sourceMappingURL=style.css.map */

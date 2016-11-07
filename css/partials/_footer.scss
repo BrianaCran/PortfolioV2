@@ -3,8 +3,8 @@ footer{
        display: inline-block;
        width: 100%;
        padding: 10px 0 20px 0px;
-       h2,p{
-         color: #00AD82;
+       h2,p,.button:hover{
+                          color: #00AD82;
        }
        span{
            color: white;
@@ -23,21 +23,23 @@ footer{
                           display: none;
            }
        }
+       .footerLeft,.footerMiddle{
+                                 float: left;
+                                }
        .footerLeft{
-                   width: 30%;
-                   float: left;
-                   padding: 0 25px 0 55px;
+                   width: 40%;
+                   padding-left: 30px;
                   }
        .footerMiddle{
-                     float: left;
-                     width: 30%;
-                     padding-top: 15px;
-                  }
+                     padding: 15px 0 0 0px;
+                    }
+       .footerMiddle,.footerRight{
+                                  width: 25%;
+       }
        .footerRight{
-                     clear: left;
-                     display: inline-block;
-                     width: 30%;
-                     padding-left: 28px;
+                    clear: left;
+                    display: inline-block;
+                    padding-left: 51px;
                   }
        .button{
                background: #348099;
@@ -50,6 +52,5 @@ footer{
        }
        .button:hover{
                      background: white;
-                     color: #00AD82;
        }
 }

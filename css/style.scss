@@ -6,15 +6,13 @@
 @import "partials/footer";
 
 body{
-     width: 100%;
-
      h1,h2{
       font-family: 'Kaushan Script', cursive;
       }
-     p{
-       font-family: 'Open Sans', sans-serif;
+     p,a{
+         font-family: 'Open Sans', sans-serif;
      }
-     a{
+     a,.fa{
        text-decoration: none;
        color: #00AD82;
        font-size: 23px;

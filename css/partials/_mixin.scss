@@ -67,3 +67,10 @@
                                                   100%{transform: translateY(25%);}
                                                 }
 }
+@mixin arrowDownAnimation {
+                            animation: arrowHover 15s ease-in-out infinite alternate;
+                            -webkit-animation: arrowHover 15s ease-in-out infinite alternate;
+                            -moz-animation: arrowHover 15s ease-in-out infinite alternate;
+                            -o-animation: arrowHover 15s ease-in-out infinite alternate;
+                            @include arrowHoverMobile;
+}
