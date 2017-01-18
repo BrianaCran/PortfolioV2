@@ -1,177 +1,116 @@
-@media(min-width: 400px)and(max-width: 768px){
+@media(max-width: 480px){
+  body{
+       header{
+       .leftSide,.codepen,.rightSide{
+                                              display: block;
+                                              width: 93%;
+                                              padding-left: 20px;
+                                            }
+                                          }
+      }
   nav{
       .desktop{
                display: none;
               }
-      .dropbtn {
-                color: white;
-                border: none;
-                cursor: pointer;
-                text-align: center;
-               }
-      .dropdown {
-                 position: relative;
-                 display: inline-block;
-                }
-      .dropContent {
-                    display: none;
-                    position: absolute;
-                    width: 100%;
-                    li{
+              .dropBtn{
                        display: block;
-                       width: 100%;
-                       background: black;
-                       padding: 5px 0px 15px 0px;
-                       .fa{
-                           font-size: 40px;
-                           padding:0px  50px 0px 20px;
-                           }
-                       }
-                    }
-       .dropdown:hover .dropContent {
+              }
+      .dropDown{
+        display: block;
+      }
+       .dropDown:hover .dropContent {
                                      display: block;
                                     }
   }
-  header{
-         article{
-                 .codepen,.mail{
-                                display: block;
-                                width: 91%;
-                                padding-left: 20px;
-                                h3,p{
-                                     padding: 0 10px 0 20px;
-                                    }
-                                }
-                 aside{
-                       display: block;
-                       width: 100%;
-                       h3,p{
-                            padding: 0 2% 0 5px;
-                           }
-                        img{
-                            padding-left: 15%;
-                           }
-                      }
-                }
-  }
-  main,#project{
+  main{
                 article{
-                        aside,section{
-                                      display: block;
-                                      width: 100%;
-                                     }
-                        aside{
+                        .leftSide{
                               img{
                                   width: 100%;
-                                  padding-left: 8%;
+                                  padding: 0 10% 20px;
                                  }
                              }
-                        section{
-                                img,.leftCol,.rightCol{
-                                                       padding-right: 0px;
-                                                       width: 100%;
-                                                       display: block;
-                                                      }
-                                .rightCol{
-                                          padding-top: 20px;
-                                         }
+                        .projectPics,.listSection{
+                            padding: 0;
+                          ul{
+                             width: 80%;
+                             h3,a,.fa{
+                                padding: 0;
+                             }
+                           }
+                           a{
+                             img{
+                                 width: 100%;
+                                 margin: 20px 0;
+                                }
+                             }
                                 }
                        }
-  }
-  #project{
-          #grDetails{
-                     .desktop{
-                              display: none;
-                             }
-                     .tabletMobile{
-                                   display: block;
-                                  }
-                     a{
-                       padding: 0;
-                     }
-                   }
-          #ptfgDetails,#grDetails,
-          #sDetails,#bDetails{
-                              img{
-                                  width: 95%;
-                                 }
-                             }
   }
   footer{
           h2,p{
                padding-left: 30px;
               }
-         .footerLeft,.footerMiddle,.footerRight{
-                                                display: block;
-                                                width: 100%;
-                                                padding:5px 0 10px 0px;
-                                                form{
-                                                     padding-left: 30px;
-                                                     p{
-                                                      padding: 0;
-                                                     }
-                                                }
+         .footerLeft,.footerRight{
+                                  display: block;
+                                  padding:5px 0 10px 0px;
+                                  form{
+                                        padding-left: 30px;
+                                        p{
+                                          padding: 0;
+                                         }
+                                        }
          }
-         .footerMiddle{
-                       .fa{
-                           padding: 10px 0 0 0;
-                           margin-left: 100px;
-
-                           @include arrowDownAnimation;
-                       }
-                       .fa-arrow-right{
-                                       display: none;
-                       }
-                       .fa-arrow-down{
-                                      display: block;
-                       }
-                     }
-         .button{
-                 padding: 20px;
-                }
-         .btnTwo{
-                 margin-left: 40px;
-                }
    }
 }
 
-@media(min-width: 769px)and(max-width: 1200px){
-  header{
-         article{
-                   aside{
-                          width: 40%;
-                          overflow: auto;
-                          height: 310px;
-                          img{
-                             width: 90%;
-                             padding-left: 20px;
-                          }
-                        }
-                }
-    }
-    main,#project{
-                  article{
-                          aside{
-                                display: inline-block;
-                                img{
-                                    width: 100%;
-                                   }
-                               }
-                          section{
-                                  ul{
-                                     width: 70%;
-                                     margin-left: 16.5%;
-                                    }
+@media(min-width: 481px)and(max-width: 768px){
+  body{
+       header{
+       .leftSide,.codepen,.rightSide{
+                                              display: block;
+                                              width: 93%;
+                                              padding-left: 4%;
+                                            }
+                                          }
+      }
+      nav{
+          .desktop{
+                   display: none;
+                  }
+                  .dropBtn{
+                           display: block;
+                  }
+          .dropDown{
+                    display: block;
+          }
+          .dropDown:hover .dropContent {
+                                         display: block;
+                                        }
+      }
+      main{
+                    article{
+                            .leftSide{
                                   img{
-                                      width: 83%;
-                                      margin-left: 16.5%;
-                                      }
-                              .leftCol{
-                                       padding-bottom: 20px;
-                                      }
+                                      width: 100%;
+                                      padding: 0 10% 20px;
+                                     }
                                  }
-                        }
-    }
+                            .projectPics,.listSection{
+                                padding: 5px;
+                              ul{
+                                 width: 80%;
+                                 margin-left: 5%;
+                               }
+                               a{
+                                 img{
+                                     margin: 20px 0;
+                                     width: 100%;
+                                    }
+                                 }
+                                    }
+                           }
+      }
     #project{
              .right,.left{
                           display: block;
@@ -201,53 +140,49 @@
                        }
             }
    footer{
-          .footerMiddle{
-                        .fa{
-                            @include arrowDownAnimation;
-                           }
-                        .fa-arrow-right{
-                                        display: none;
-                                      }
-                        .fa-arrow-down{
-                                       display: block;
-                                      }
-                      }
-          .footerMiddle, .footerRight{
-                                      margin-right: 150px;
-                                      float: right;
-          }
           .footerRight{
+                       margin-right: 150px;
                        display: block;
                       }
-    }
-}
+        }
 
-@media(min-width: 1201px){
-  header{
-         article{
-                 aside{
-                       width: 40%;
-                      }
-                }
-  }
-  main,#project{
+}
+@media(min-width: 769px)and(max-width: 1000px){
+  body{
+       header{
+       .leftSide,.codepen,.rightSide{
+                                              display: block;
+                                              width: 93%;
+                                              padding-left: 4%;
+                                            }
+                                          }
+      }
+  main{
                 article{
-                        aside{
-                              display: inline-block;
-                              img{
-                                  padding-left: 15%;
-                                  }
+                        .leftSide{
+                                  img{
+                                      padding-left: 15%;
+                                    }
                               }
-                        section{
-                                .leftCol,.rightCol{
-                                                   width: 40%;
-                                                   display: inline-block;
-                                                  }
-                                .leftCol{
-                                         padding:0 8px 5px 15px;
-                                         margin-left: 15%;
-                                        }
-                              }
-                      }
+                              .projectPics,.listSection{
+                                  padding: 5px;
+                                  width: 100%;
+                                ul{
+                                   width: 80%;
+                                   margin-left: 5%;
+                                 }
+                                 a{
+                                   img{
+                                     width: 45%;
+                                       margin: 20px 0;
+                                      }
+                                   }
+                                      }
+                             }
+                       }
   }
+
+@media(max-width: 1200px){
+
+
 }

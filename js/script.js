@@ -1,3 +1,5 @@
+
+
 /* Not a good example of dry code will rework at a later date */
 function ptfg(){
                 document.getElementById('ptfg').style.display = "block";

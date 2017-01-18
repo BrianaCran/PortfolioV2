@@ -1,5 +1,4 @@
 @import "partials/normalize";
-@import "partials/mixin";
 @import "partials/nav";
 @import "partials/header";
 @import "partials/content";
@@ -13,9 +12,9 @@ body{
          font-family: 'Open Sans', sans-serif;
      }
      a,.fa{
-       text-decoration: none;
-       color: #00AD82;
-       font-size: 23px;
+            text-decoration: none;
+            color: white;
+            font-size: 23px;
      }
      .me{
          max-width: 300px;

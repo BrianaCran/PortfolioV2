@@ -2,55 +2,26 @@ footer{
        background: black;
        display: inline-block;
        width: 100%;
-       padding: 10px 0 20px 0px;
-       h2,p,.button:hover{
+       padding: 10px 0px 20px 0px;
+       h2,p,.btn:hover{
                           color: #00AD82;
        }
-       span{
-           color: white;
-           .fa{
-               font-size: 40px;
-               padding:10px 0 0 80px;
-
-               animation: arrowHover 15s ease-in-out infinite alternate;
-               -webkit-animation: arrowHover 15s ease-in-out infinite alternate;
-               -moz-animation: arrowHover 15s ease-in-out infinite alternate;
-               -o-animation: arrowHover 15s ease-in-out infinite alternate;
-
-               @include arrowHover;
-           }
-           .fa-arrow-down{
-                          display: none;
-           }
-       }
-       .footerLeft,.footerMiddle{
-                                 float: left;
-                                }
        .footerLeft{
-                   width: 40%;
                    padding-left: 30px;
+                   float: left;
                   }
-       .footerMiddle{
-                     padding: 15px 0 0 0px;
-                    }
-       .footerMiddle,.footerRight{
-                                  width: 25%;
-       }
        .footerRight{
                     clear: left;
                     display: inline-block;
                     padding-left: 51px;
                   }
-       .button{
+       .btn{
                background: #348099;
                color: white;
                border: none;
                padding: 10px;
        }
-       .btnTwo{
-               margin-left: 20px;
-       }
-       .button:hover{
+       .btn:hover{
                      background: white;
        }
 }

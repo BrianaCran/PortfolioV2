@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Briana Crandall</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -11,27 +11,27 @@
   </head>
 
   <body>
-      <nav>
+      <nav role="navigation">
         <ul class="desktop">
-          <li class="active"><a href="index.html">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="contact"><a href="#bottom">Contact</a></li>
+          <li class="active"><a href="index.html"  title="To Portfolio Page">Portfolio</a></li>
+          <li><a href="about.html"  title="To About Page">About</a></li>
+          <li><a href="#bottom" title="Scroll down to contact form">Contact</a></li>
           <li>
-            <a href="https://github.com/BrianaCran" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/briana_crandall" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/briana-crandall-6714259a" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://github.com/BrianaCran" target="_blank" title="To github profile"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/briana_crandall" target="_blank"  title="To twitter profile"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/briana-crandall-6714259a" target="_blank"  title="To linkedin profile"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
           </li>
         </ul>
-        <ul class="mobile dropdown">
-          <h2 class="dropbtn">Menu</h2>
+        <ul class="mobile dropDown">
+          <h2 class="dropBtn" role="button">Menu</h2>
           <div class="dropContent">
           <li class="active"><a href="index.html">Portfolio</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#bottom">Contact</a></li>
           <li class="mediaLinks">
-            <a href="https://github.com/BrianaCran" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/briana_crandall" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/briana-crandall-6714259a" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://github.com/BrianaCran" target="_blank" title="To github profile"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/briana_crandall" target="_blank"  title="To twitter profile"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/briana-crandall-6714259a" target="_blank"  title="To linkedin profile"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
           </li>
           </div>
 
@@ -40,94 +40,30 @@
 
       <header>
         <article>
-            <aside>
+            <section class="leftSide">
               <h1>Monthly Feature</h1>
               <h3>Every month I update this section to give an idea of what I'm either working on or learning!<h3>
               <p>While learning different things through code academy and other resources, I took a break and focused on animations using code. This is an animation that uses only CSS in order to work and it is cross browser compatible.</p>
-            </aside>
+            </section>
             <section class="codepen">
               <p data-height="300" data-theme-id="0" data-slug-hash="amqvGa" data-default-tab="result" data-user="brianacrandall" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/brianacrandall/pen/amqvGa/">starfield</a> by Briana Crandall (<a href="http://codepen.io/brianacrandall">@brianacrandall</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             </section>
         </article>
       </header>
 
-      <main>
+      <main role="main">
         <article>
-          <aside>
               <h1>Briana's Portfolio!</h1>
-              <img src="images/me.png" class="me" alt="A photo of Briana Crandall">
-          </aside>
-          <section>
-            <div class="leftCol">
-            <a href="#project"><img src="images/pftgBG.png" onclick="ptfg()"></a>
-            <a href="#project"><img src="images/goodreads.png" onclick="goodreads()"></a>
-            </div>
-
-            <div class="rightCol">
-            <a href="#project"><img src="images/scoundrelsPreview.png" onclick="scoundrels()"></a>
-            <a href="#project"><img src="images/bbPreview.png" onclick="branchless()"></a>
-            </div>
+          <section class="projectPics">
+            <a href="pftg.html" title="To Prey For the Gods Project"><img src="images/pftgBG.png"></a>
+            <a href="#project"><img src="images/goodreads.png"  onclick="goodreads()"></a>
+            <a href="#project"><img src="images/scoundrelsPreview.png"  onclick="scoundrels()"></a>
+            <a href="#project"><img src="images/bbPreview.png"   onclick="branchless()"></a>
           </section>
         </article>
       </main>
 
-      <section id="project">
-        <!--Final Project -->
-          <article id="ptfg">
-            <aside>
-              <h1>Prey for the Gods</h1>
-              <p>The Prey of the Gods is a game currently being developed by a gaming studio comprised of only three developers. They have gotten past the first hurrdle of
-                 acquiring funding and put together a quick website. This website is good enough to convey information to those looking for it, but because of time constraints
-                 faced by the developers it lacks in the quality that most gamers are used to seeing and the organization of information could be presented in a better way.
-             </p>
-             <a href="https://github.com/BrianaCran/PreyfortheGods" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Code</a>
-             <a href="https://brianacran.github.io/PreyfortheGods/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Live Site</a>
-             <br>
-             <div class="left">
-               <h3>Process</h3>
-               <ul>
-                  <li>Sketching</li>
-                  <li>Wireframes</li>
-                  <li>Mockups</li>
-                  <li>Html, Css, Jquery</li>
-               </ul>
-             </div>
-             <div class="right">
-             <h3>Materials Used</h3>
-             <ul>
-                 <li>Sketching Supplies</li>
-                 <li>Illustrator</li>
-                 <li>Photoshop</li>
-                 <li>Atom</li>
-             </ul>
-             </div>
-             <h3>Wireframes and Mockups</h3>
-             <p>If you wish to see the wireframe or mockups just click the links and they will open in a new tab.</p>
-             <a href="documents/pftgWireframes.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Wireframes</a>
-             <a href="documents/pftgMockups.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Mockups</a>
-            </aside>
 
-            <section id="ptfgDetails">
-              <div class="leftCol">
-                <img src="images/ptfgHome.jpg">
-                <br>
-                <br>
-                <img src="images/ptfgPress.jpg">
-                <br>
-                <br>
-                <img src="images/ptfgM.jpg">
-              </div>
-              <div class="rightCol">
-                <img src="images/ptfgFAQ.jpg">
-                <br>
-                <br>
-                <img src="images/ptfgSupport.jpg">
-                <br>
-                <br>
-                <img src="images/ptfgM2.jpg">
-              </div>
-            </section>
-          </article>
           <!--Goodreads Project -->
           <article id="goodreads">
             <aside>
@@ -309,16 +245,6 @@
           <p>&#169; 2016 Briana Crandall</p>
         </section>
 
-        <section class="footerMiddle">
-          <p>
-             <span>Or use the form to email me
-               <br>
-               <i class="fa fa-arrow-right" aria-hidden="true"></i>
-               <i class="fa fa-arrow-down" aria-hidden="true"></i>
-             </span>
-          </p>
-        </section>
-
         <section class="footerRight">
           <form action="mail.php" method="POST">
             <p>Name</p> <input type="text" name="name" size="30">
@@ -326,8 +252,7 @@
             <p>Subject</p><input type="text" name="subject" size="40">
             <p>Message</p><textarea name="message" rows="6" cols="39"></textarea><br />
             <br>
-            <input type="submit" value="Send" class="button">
-            <input type="reset" value="Clear" class="button btnTwo">
+            <input type="submit" value="Send" class="btn">
           </form>
         </section>
       </footer>
