@@ -368,7 +368,8 @@ nav {
   background: black;
   border-bottom: 2px solid white;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 100; }
   nav ul {
     list-style-type: none;
     width: 100%;
@@ -377,192 +378,117 @@ nav {
     nav ul li {
       display: inline-block;
       text-align: center;
-      padding: 11px 5px 10px 6px;
+      line-height: 50px;
       width: 23%; }
-      nav ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 23px; }
-      nav ul li a:hover {
+      nav ul li a, nav ul li .fa {
+        font-size: 25px; }
+      nav ul li a:hover, nav ul li .fa:hover {
         color: #00AD82; }
       nav ul li .fa {
-        padding-right: 25px; }
+        padding-right: 30px; }
     nav ul .active {
       background: #348099; }
       nav ul .active a {
         color: #e5e5e5; }
-  nav .mobile {
+  nav .mobile, nav .dropDown, nav .dropContent {
     display: none; }
+  nav .dropBtn {
+    color: white;
+    cursor: pointer;
+    text-align: center; }
+  nav .dropDown {
+    position: relative; }
+  nav .dropContent {
+    position: absolute;
+    width: 100%;
+    background: black; }
+    nav .dropContent li {
+      display: block;
+      width: 100%;
+      padding: 5px 0px 15px 0px; }
+      nav .dropContent li .fa {
+        font-size: 40px;
+        padding: 0px  50px 0px 20px; }
 
 header {
   background: #00AD82; }
   header article {
     width: 100%;
     padding: 70px 0px 30px 0px; }
-    header article aside {
-      float: left;
-      width: 30%;
-      padding: 0 0px 0 10px; }
-      header article aside h1 {
+    header article .leftSide {
+      width: 40%;
+      display: inline-block;
+      padding: 20px 0px 0 20px; }
+      header article .leftSide h1 {
         padding-left: 20%;
         border-bottom: 2px solid white; }
-      header article aside h3 {
+      header article .leftSide h3 {
         padding-left: 15px; }
-      header article aside img {
+      header article .leftSide img {
         width: 60%;
         padding-left: 12%; }
-    header article .codepen, header article .mail {
-      clear: left;
-      width: 55%;
+    header article .codepen, header article .rightSide {
+      width: 50%;
       display: inline-block;
       padding: 10px 0 0 20px; }
-      header article .codepen h3, header article .mail h3 {
+      header article .codepen h3, header article .codepen p, header article .rightSide h3, header article .rightSide p {
         line-height: 40px;
-        padding: 60px 40px 0 0px; }
-      header article .codepen p, header article .codepen .fa, header article .mail p, header article .mail .fa {
+        padding: 0 10px; }
+      header article .codepen p, header article .codepen .fa, header article .rightSide p, header article .rightSide .fa {
         color: white; }
 
-main, #project {
+main {
   clear: both;
   background: #e5e5e5; }
-  main article, #project article {
+  main article {
     padding: 5px 30px 10px 30px; }
-    main article aside, #project article aside {
-      float: left;
-      width: 30%; }
-      main article aside h1, #project article aside h1 {
-        text-align: center; }
-      main article aside img, #project article aside img {
-        width: 70%; }
-      main article aside a, #project article aside a {
-        padding: 0 0 10px 30px; }
-    main article section, #project article section {
-      clear: left;
-      display: inline-block;
-      width: 70%;
-      padding: 30px 0 0 0px; }
-      main article section img, #project article section img {
-        width: 100%;
-        margin-bottom: 20px;
+    main article .projectPics, main article .listSection {
+      display: block;
+      width: 80%;
+      padding: 0 10%; }
+      main article .projectPics a img, main article .projectPics ul, main article .projectPics .samples, main article .listSection a img, main article .listSection ul, main article .listSection .samples {
         border: 3px solid black; }
-      main article section ul, #project article section ul {
+      main article .projectPics ul, main article .listSection ul {
         height: 200px;
-        margin-bottom: 25px;
-        border: 3px solid black; }
-        main article section ul li, #project article section ul li {
+        display: inline-block;
+        width: 40%;
+        margin-left: 30px; }
+        main article .projectPics ul li, main article .listSection ul li {
           line-height: 30px; }
-
-#project {
-  padding: 50px 0 30px 0;
-  background: white;
-  display: inline-block; }
-  #project .left, #project .right {
-    display: inline-block;
-    width: 45%; }
-  #project a {
-    font-size: 18px; }
-  #project .right, #project p, #project a, #project h3 {
-    padding-left: 15px; }
-  #project #ptfg, #project #ptfgDetails, #project #goodreads, #project #grDetails,
-  #project #scoundrels, #project #sDetails, #project #branchless, #project #bDetails,
-  #project #grDetails .tabletMobile {
-    display: none; }
-  #project #ptfgDetails, #project #grDetails,
-  #project #sDetails, #project #bDetails {
-    height: 650px;
-    overflow-x: auto; }
+      main article .projectPics a img, main article .listSection a img {
+        width: 45%;
+        margin: 10px; }
+      main article .projectPics .samples, main article .listSection .samples {
+        margin: 10px 0 10px 33px;
+        width: 44%; }
+      main article .projectPics .top, main article .listSection .top {
+        float: left; }
+    main article a, main article .fa {
+      font-size: 20px;
+      color: #00AD82; }
+    main article p, main article a, main article h3 {
+      padding-left: 15px; }
 
 footer {
   background: black;
   display: inline-block;
   width: 100%;
-  padding: 10px 0 20px 0px; }
-  footer h2, footer p, footer .button:hover {
+  padding: 10px 0px 20px 0px; }
+  footer h2, footer p, footer .btn:hover {
     color: #00AD82; }
-  footer span {
-    color: white; }
-    footer span .fa {
-      font-size: 40px;
-      padding: 10px 0 0 80px;
-      animation: arrowHover 15s ease-in-out infinite alternate;
-      -webkit-animation: arrowHover 15s ease-in-out infinite alternate;
-      -moz-animation: arrowHover 15s ease-in-out infinite alternate;
-      -o-animation: arrowHover 15s ease-in-out infinite alternate; }
-@keyframes arrowHover {
-  0% {
-    transform: translateX(0%); }
-  20% {
-    transform: translateX(15%); }
-  40% {
-    transform: translateX(0%); }
-  60% {
-    transform: translateX(15%); }
-  80% {
-    transform: translateX(0%); }
-  100% {
-    transform: translateX(15%); } }
-@-o-keyframes arrowHover {
-  0% {
-    transform: translateX(0%); }
-  20% {
-    transform: translateX(15%); }
-  40% {
-    transform: translateX(0%); }
-  60% {
-    transform: translateX(15%); }
-  80% {
-    transform: translateX(0%); }
-  100% {
-    transform: translateX(15%); } }
-@-moz-keyframes arrowHover {
-  0% {
-    transform: translateX(0%); }
-  20% {
-    transform: translateX(15%); }
-  40% {
-    transform: translateX(0%); }
-  60% {
-    transform: translateX(15%); }
-  80% {
-    transform: translateX(0%); }
-  100% {
-    transform: translateX(15%); } }
-@-webkit-keyframes arrowHover {
-  0% {
-    transform: translateX(0%); }
-  20% {
-    transform: translateX(15%); }
-  40% {
-    transform: translateX(0%); }
-  60% {
-    transform: translateX(15%); }
-  80% {
-    transform: translateX(0%); }
-  100% {
-    transform: translateX(15%); } }
-    footer span .fa-arrow-down {
-      display: none; }
-  footer .footerLeft, footer .footerMiddle {
-    float: left; }
   footer .footerLeft {
-    width: 40%;
-    padding-left: 30px; }
-  footer .footerMiddle {
-    padding: 15px 0 0 0px; }
-  footer .footerMiddle, footer .footerRight {
-    width: 25%; }
+    padding-left: 30px;
+    float: left; }
   footer .footerRight {
     clear: left;
     display: inline-block;
     padding-left: 51px; }
-  footer .button {
+  footer .btn {
     background: #348099;
     color: white;
     border: none;
     padding: 10px; }
-  footer .btnTwo {
-    margin-left: 20px; }
-  footer .button:hover {
+  footer .btn:hover {
     background: white; }
 
 body h1, body h2 {
@@ -571,270 +497,115 @@ body p, body a {
   font-family: 'Open Sans', sans-serif; }
 body a, body .fa {
   text-decoration: none;
-  color: #00AD82;
+  color: white;
   font-size: 23px; }
 body .me {
   max-width: 300px; }
 
-@media (min-width: 400px) and (max-width: 768px) {
+@media (max-width: 480px) {
+  body p {
+    font-size: 18px;
+    line-height: 1.5; }
+  body header .leftSide, body header .codepen, body header .rightSide {
+    display: block;
+    width: 93%;
+    padding-left: 10px; }
+    body header .leftSide img, body header .codepen img, body header .rightSide img {
+      width: 80%; }
+
   nav .desktop {
     display: none; }
-  nav .dropbtn {
-    color: white;
-    border: none;
-    cursor: pointer;
-    text-align: center; }
-  nav .dropdown {
+  nav .dropDown {
     position: relative;
     display: inline-block; }
-  nav .dropContent {
-    display: none;
-    position: absolute;
+  nav .dropDown:hover .dropContent {
+    display: block; }
+
+  main article .projectPics, main article .listSection {
+    padding: 0;
     width: 100%; }
-    nav .dropContent li {
+    main article .projectPics ul, main article .listSection ul {
+      width: 90%;
+      margin-left: 0; }
+    main article .projectPics a, main article .listSection a {
+      padding: 0; }
+      main article .projectPics a img, main article .listSection a img {
+        width: 95%;
+        margin: 20px 0; }
+    main article .projectPics .samples, main article .listSection .samples {
       display: block;
       width: 100%;
-      background: black;
-      padding: 5px 0px 15px 0px; }
-      nav .dropContent li .fa {
-        font-size: 40px;
-        padding: 0px  50px 0px 20px; }
-  nav .dropdown:hover .dropContent {
-    display: block; }
-
-  header article .codepen, header article .mail {
-    display: block;
-    width: 91%;
-    padding-left: 20px; }
-    header article .codepen h3, header article .codepen p, header article .mail h3, header article .mail p {
-      padding: 0 10px 0 20px; }
-  header article aside {
-    display: block;
-    width: 100%; }
-    header article aside h3, header article aside p {
-      padding: 0 2% 0 5px; }
-    header article aside img {
-      padding-left: 15%; }
-
-  main article aside, main article section, #project article aside, #project article section {
-    display: block;
-    width: 100%; }
-  main article aside img, #project article aside img {
-    width: 100%;
-    padding-left: 8%; }
-  main article section img, main article section .leftCol, main article section .rightCol, #project article section img, #project article section .leftCol, #project article section .rightCol {
-    padding-right: 0px;
-    width: 100%;
-    display: block; }
-  main article section .rightCol, #project article section .rightCol {
-    padding-top: 20px; }
-
-  #project #grDetails .desktop {
-    display: none; }
-  #project #grDetails .tabletMobile {
-    display: block; }
-  #project #grDetails a {
-    padding: 0; }
-  #project #ptfgDetails img, #project #grDetails img,
-  #project #sDetails img, #project #bDetails img {
-    width: 95%; }
+      margin: 20px 0; }
 
   footer h2, footer p {
     padding-left: 30px; }
-  footer .footerLeft, footer .footerMiddle, footer .footerRight {
+  footer .footerLeft, footer .footerRight {
     display: block;
-    width: 100%;
     padding: 5px 0 10px 0px; }
-    footer .footerLeft form, footer .footerMiddle form, footer .footerRight form {
+    footer .footerLeft form, footer .footerRight form {
       padding-left: 30px; }
-      footer .footerLeft form p, footer .footerMiddle form p, footer .footerRight form p {
-        padding: 0; }
-  footer .footerMiddle .fa {
-    padding: 10px 0 0 0;
-    margin-left: 100px;
-    animation: arrowHover 15s ease-in-out infinite alternate;
-    -webkit-animation: arrowHover 15s ease-in-out infinite alternate;
-    -moz-animation: arrowHover 15s ease-in-out infinite alternate;
-    -o-animation: arrowHover 15s ease-in-out infinite alternate; }
-  @keyframes arrowHover {
-    0% {
-      transform: translateY(0%); }
-    20% {
-      transform: translateY(25%); }
-    40% {
-      transform: translateY(0%); }
-    60% {
-      transform: translateY(25%); }
-    80% {
-      transform: translateY(0%); }
-    100% {
-      transform: translateY(25%); } }
-  @-o-keyframes arrowHover {
-    0% {
-      transform: translateY(0%); }
-    20% {
-      transform: translateY(25%); }
-    40% {
-      transform: translateY(0%); }
-    60% {
-      transform: translateY(25%); }
-    80% {
-      transform: translateY(0%); }
-    100% {
-      transform: translateY(25%); } }
-  @-moz-keyframes arrowHover {
-    0% {
-      transform: translateY(0%); }
-    20% {
-      transform: translateY(25%); }
-    40% {
-      transform: translateY(0%); }
-    60% {
-      transform: translateY(25%); }
-    80% {
-      transform: translateY(0%); }
-    100% {
-      transform: translateY(25%); } }
-  @-webkit-keyframes arrowHover {
-    0% {
-      transform: translateY(0%); }
-    20% {
-      transform: translateY(25%); }
-    40% {
-      transform: translateY(0%); }
-    60% {
-      transform: translateY(25%); }
-    80% {
-      transform: translateY(0%); }
-    100% {
-      transform: translateY(25%); } }
-  footer .footerMiddle .fa-arrow-right {
-    display: none; }
-  footer .footerMiddle .fa-arrow-down {
-    display: block; }
-  footer .button {
-    padding: 20px; }
-  footer .btnTwo {
-    margin-left: 40px; } }
-@media (min-width: 769px) and (max-width: 1200px) {
-  header article aside {
-    width: 40%;
-    overflow: auto;
-    height: 310px; }
-    header article aside img {
-      width: 90%;
-      padding-left: 20px; }
-
-  main article aside, #project article aside {
-    display: inline-block; }
-    main article aside img, #project article aside img {
-      width: 100%; }
-  main article section ul, #project article section ul {
-    width: 70%;
-    margin-left: 16.5%; }
-  main article section img, #project article section img {
-    width: 83%;
-    margin-left: 16.5%; }
-  main article section .leftCol, #project article section .leftCol {
-    padding-bottom: 20px; }
-
-  #project .right, #project .left {
+      footer .footerLeft form p, footer .footerRight form p {
+        padding: 0; } }
+@media (min-width: 481px) and (max-width: 768px) {
+  body header .leftSide, body header .codepen, body header .rightSide {
     display: block;
-    width: 100%; }
-  #project p {
-    width: 100%; }
-  #project a {
-    display: inline-block; }
-  #project #ptfgDetails, #project #grDetails,
-  #project #sDetails, #project #bDetails {
-    overflow-x: auto;
-    height: 1000px; }
-  #project #grDetails .desktop {
-    display: none; }
-  #project #grDetails .tabletMobile {
-    display: block; }
-  #project #grDetails a {
-    padding: 0; }
+    width: 93%;
+    padding-left: 4%; }
+    body header .leftSide img, body header .codepen img, body header .rightSide img {
+      width: 90%;
+      padding: 0; }
 
-  footer .footerMiddle .fa {
-    animation: arrowHover 15s ease-in-out infinite alternate;
-    -webkit-animation: arrowHover 15s ease-in-out infinite alternate;
-    -moz-animation: arrowHover 15s ease-in-out infinite alternate;
-    -o-animation: arrowHover 15s ease-in-out infinite alternate; }
-  @keyframes arrowHover {
-    0% {
-      transform: translateY(0%); }
-    20% {
-      transform: translateY(25%); }
-    40% {
-      transform: translateY(0%); }
-    60% {
-      transform: translateY(25%); }
-    80% {
-      transform: translateY(0%); }
-    100% {
-      transform: translateY(25%); } }
-  @-o-keyframes arrowHover {
-    0% {
-      transform: translateY(0%); }
-    20% {
-      transform: translateY(25%); }
-    40% {
-      transform: translateY(0%); }
-    60% {
-      transform: translateY(25%); }
-    80% {
-      transform: translateY(0%); }
-    100% {
-      transform: translateY(25%); } }
-  @-moz-keyframes arrowHover {
-    0% {
-      transform: translateY(0%); }
-    20% {
-      transform: translateY(25%); }
-    40% {
-      transform: translateY(0%); }
-    60% {
-      transform: translateY(25%); }
-    80% {
-      transform: translateY(0%); }
-    100% {
-      transform: translateY(25%); } }
-  @-webkit-keyframes arrowHover {
-    0% {
-      transform: translateY(0%); }
-    20% {
-      transform: translateY(25%); }
-    40% {
-      transform: translateY(0%); }
-    60% {
-      transform: translateY(25%); }
-    80% {
-      transform: translateY(0%); }
-    100% {
-      transform: translateY(25%); } }
-  footer .footerMiddle .fa-arrow-right {
+  nav .desktop {
     display: none; }
-  footer .footerMiddle .fa-arrow-down {
+  nav .dropDown {
+    position: relative;
+    display: inline-block; }
+  nav .dropDown:hover .dropContent {
     display: block; }
-  footer .footerMiddle, footer .footerRight {
-    margin-right: 150px;
-    float: right; }
+
+  main article .leftSide img {
+    width: 100%;
+    padding: 0 10% 20px; }
+  main article .projectPics, main article .listSection {
+    padding: 5px;
+    width: 100%; }
+    main article .projectPics ul, main article .listSection ul {
+      width: 92%;
+      margin: 10px 0; }
+    main article .projectPics a, main article .listSection a {
+      padding: 0; }
+      main article .projectPics a img, main article .listSection a img {
+        margin: 20px 0;
+        width: 100%; }
+    main article .projectPics .samples, main article .listSection .samples {
+      display: block;
+      width: 100%;
+      margin: 10px 0; }
+
   footer .footerRight {
     display: block; } }
-@media (min-width: 1201px) {
-  header article aside {
-    width: 40%; }
+@media (min-width: 769px) and (max-width: 1100px) {
+  body header .leftSide, body header .codepen, body header .rightSide {
+    display: block;
+    width: 93%;
+    padding-left: 4%; }
 
-  main article aside, #project article aside {
-    display: inline-block; }
-    main article aside img, #project article aside img {
-      padding-left: 15%; }
-  main article section .leftCol, main article section .rightCol, #project article section .leftCol, #project article section .rightCol {
-    width: 40%;
-    display: inline-block; }
-  main article section .leftCol, #project article section .leftCol {
-    padding: 0 8px 5px 15px;
-    margin-left: 15%; } }
+  main article .leftSide img {
+    padding-left: 15%; }
+  main article .projectPics ul, main article .listSection ul {
+    width: 80%;
+    margin-left: 5%; }
+  main article .projectPics a img, main article .listSection a img {
+    width: 45%;
+    margin: 20px 0; }
+  main article .projectPics .samples, main article .listSection .samples {
+    display: block;
+    width: 90%; } }
+@media (min-width: 1200px) {
+  body, nav {
+    width: 1200px; }
+
+  body {
+    margin: 0 10% 0 10%; } }
 
 /*# sourceMappingURL=style.css.map */
