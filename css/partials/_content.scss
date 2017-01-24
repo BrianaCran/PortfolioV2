@@ -6,11 +6,13 @@ main{
 
             .projectPics,.listSection{
                          display: block;
-                         width: 90%;
-                         padding: 0 5%;
+                         width: 80%;
+                         padding: 0 10%;
+                         a img, ul, .samples{
+                           border: 3px solid black;
+                         }
                          ul{
                             height: 200px;
-                            border: 3px solid black;
                             display: inline-block;
                             width: 40%;
                             margin-left: 30px;
@@ -21,25 +23,22 @@ main{
                           a{
                             img{
                                 width: 45%;
-                                border: 3px solid black;
                                 margin: 10px;
                                }
                             }
+                        .samples{
+                          margin: 10px 0 10px 33px;
+                          width: 44%;
+                        }
+                        .top{
+                             float: left;
+                        }
             }
-            .samples{
-              padding-left: 6%;
-            img{
-                width: 42%;
-                margin: 1% 1%;
-                border: 3px solid black;
-               }
-             }
-
                  a,.fa{
                    font-size: 20px;
                    color: #00AD82;
                  }
-                 .right,p,a,h3{
+                 p,a,h3{
                                padding-left: 15px;
                  }
     }

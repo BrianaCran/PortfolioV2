@@ -390,19 +390,15 @@ nav {
       background: #348099; }
       nav ul .active a {
         color: #e5e5e5; }
-  nav .mobile {
+  nav .mobile, nav .dropDown, nav .dropContent {
     display: none; }
   nav .dropBtn {
     color: white;
-    border: none;
     cursor: pointer;
-    text-align: center;
-    display: none; }
+    text-align: center; }
   nav .dropDown {
-    position: relative;
-    display: none; }
+    position: relative; }
   nav .dropContent {
-    display: none;
     position: absolute;
     width: 100%;
     background: black; }
@@ -422,7 +418,7 @@ header {
     header article .leftSide {
       width: 40%;
       display: inline-block;
-      padding: 0 0px 0 20px; }
+      padding: 20px 0px 0 20px; }
       header article .leftSide h1 {
         padding-left: 20%;
         border-bottom: 2px solid white; }
@@ -448,11 +444,12 @@ main {
     padding: 5px 30px 10px 30px; }
     main article .projectPics, main article .listSection {
       display: block;
-      width: 90%;
-      padding: 0 5%; }
+      width: 80%;
+      padding: 0 10%; }
+      main article .projectPics a img, main article .projectPics ul, main article .projectPics .samples, main article .listSection a img, main article .listSection ul, main article .listSection .samples {
+        border: 3px solid black; }
       main article .projectPics ul, main article .listSection ul {
         height: 200px;
-        border: 3px solid black;
         display: inline-block;
         width: 40%;
         margin-left: 30px; }
@@ -460,18 +457,16 @@ main {
           line-height: 30px; }
       main article .projectPics a img, main article .listSection a img {
         width: 45%;
-        border: 3px solid black;
         margin: 10px; }
-    main article .samples {
-      padding-left: 6%; }
-      main article .samples img {
-        width: 42%;
-        margin: 1% 1%;
-        border: 3px solid black; }
+      main article .projectPics .samples, main article .listSection .samples {
+        margin: 10px 0 10px 33px;
+        width: 44%; }
+      main article .projectPics .top, main article .listSection .top {
+        float: left; }
     main article a, main article .fa {
       font-size: 20px;
       color: #00AD82; }
-    main article .right, main article p, main article a, main article h3 {
+    main article p, main article a, main article h3 {
       padding-left: 15px; }
 
 footer {
@@ -508,30 +503,37 @@ body .me {
   max-width: 300px; }
 
 @media (max-width: 480px) {
+  body p {
+    font-size: 18px;
+    line-height: 1.5; }
   body header .leftSide, body header .codepen, body header .rightSide {
     display: block;
     width: 93%;
-    padding-left: 20px; }
+    padding-left: 10px; }
+    body header .leftSide img, body header .codepen img, body header .rightSide img {
+      width: 80%; }
 
   nav .desktop {
     display: none; }
-  nav .dropBtn {
-    display: block; }
   nav .dropDown {
-    display: block; }
+    position: relative;
+    display: inline-block; }
   nav .dropDown:hover .dropContent {
     display: block; }
 
-  main article .leftSide img {
-    width: 100%;
-    padding: 0 10% 20px; }
   main article .projectPics, main article .listSection {
-    padding: 0; }
+    padding: 0;
+    width: 100%; }
     main article .projectPics ul, main article .listSection ul {
-      width: 80%; }
-      main article .projectPics ul h3, main article .projectPics ul a, main article .projectPics ul .fa, main article .listSection ul h3, main article .listSection ul a, main article .listSection ul .fa {
-        padding: 0; }
-    main article .projectPics a img, main article .listSection a img {
+      width: 90%;
+      margin-left: 0; }
+    main article .projectPics a, main article .listSection a {
+      padding: 0; }
+      main article .projectPics a img, main article .listSection a img {
+        width: 95%;
+        margin: 20px 0; }
+    main article .projectPics .samples, main article .listSection .samples {
+      display: block;
       width: 100%;
       margin: 20px 0; }
 
@@ -549,13 +551,15 @@ body .me {
     display: block;
     width: 93%;
     padding-left: 4%; }
+    body header .leftSide img, body header .codepen img, body header .rightSide img {
+      width: 90%;
+      padding: 0; }
 
   nav .desktop {
     display: none; }
-  nav .dropBtn {
-    display: block; }
   nav .dropDown {
-    display: block; }
+    position: relative;
+    display: inline-block; }
   nav .dropDown:hover .dropContent {
     display: block; }
 
@@ -563,36 +567,24 @@ body .me {
     width: 100%;
     padding: 0 10% 20px; }
   main article .projectPics, main article .listSection {
-    padding: 5px; }
+    padding: 5px;
+    width: 100%; }
     main article .projectPics ul, main article .listSection ul {
-      width: 80%;
-      margin-left: 5%; }
-    main article .projectPics a img, main article .listSection a img {
-      margin: 20px 0;
-      width: 100%; }
-
-  #project .right, #project .left {
-    display: block;
-    width: 100%; }
-  #project p {
-    width: 100%; }
-  #project a {
-    display: inline-block; }
-  #project #ptfgDetails, #project #grDetails,
-  #project #sDetails, #project #bDetails {
-    overflow-x: auto;
-    height: 1000px; }
-  #project #grDetails .desktop {
-    display: none; }
-  #project #grDetails .tabletMobile {
-    display: block; }
-  #project #grDetails a {
-    padding: 0; }
+      width: 92%;
+      margin: 10px 0; }
+    main article .projectPics a, main article .listSection a {
+      padding: 0; }
+      main article .projectPics a img, main article .listSection a img {
+        margin: 20px 0;
+        width: 100%; }
+    main article .projectPics .samples, main article .listSection .samples {
+      display: block;
+      width: 100%;
+      margin: 10px 0; }
 
   footer .footerRight {
-    margin-right: 150px;
     display: block; } }
-@media (min-width: 769px) and (max-width: 1000px) {
+@media (min-width: 769px) and (max-width: 1100px) {
   body header .leftSide, body header .codepen, body header .rightSide {
     display: block;
     width: 93%;
@@ -600,14 +592,20 @@ body .me {
 
   main article .leftSide img {
     padding-left: 15%; }
-  main article .projectPics, main article .listSection {
-    padding: 5px;
-    width: 100%; }
-    main article .projectPics ul, main article .listSection ul {
-      width: 80%;
-      margin-left: 5%; }
-    main article .projectPics a img, main article .listSection a img {
-      width: 45%;
-      margin: 20px 0; } }
+  main article .projectPics ul, main article .listSection ul {
+    width: 80%;
+    margin-left: 5%; }
+  main article .projectPics a img, main article .listSection a img {
+    width: 45%;
+    margin: 20px 0; }
+  main article .projectPics .samples, main article .listSection .samples {
+    display: block;
+    width: 90%; } }
+@media (min-width: 1200px) {
+  body, nav {
+    width: 1200px; }
+
+  body {
+    margin: 0 10% 0 10%; } }
 
 /*# sourceMappingURL=style.css.map */

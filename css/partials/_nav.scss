@@ -20,33 +20,29 @@ nav{
           a:hover,.fa:hover{
                             color: #00AD82;
                           }
-        .fa{
-            padding-right: 30px;
+          .fa{
+              padding-right: 30px;
+             }
         }
-      }
-      .active{
-              background: #348099;
-              a{
-                color: #e5e5e5;
-              }
+    .active{
+            background: #348099;
+            a{
+              color: #e5e5e5;
+            }
       }
     }
-    .mobile{
-            display: none;
+    .mobile,.dropDown,.dropContent{
+                                    display: none;
     }
     .dropBtn{
               color: white;
-              border: none;
               cursor: pointer;
               text-align: center;
-              display: none;
              }
     .dropDown {
                position: relative;
-               display: none;
               }
     .dropContent {
-                  display: none;
                   position: absolute;
                   width: 100%;
                   background: black;
