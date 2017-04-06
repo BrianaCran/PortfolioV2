@@ -491,16 +491,18 @@ footer {
   footer .btn:hover {
     background: white; }
 
-body h1, body h2 {
-  font-family: 'Kaushan Script', cursive; }
-body p, body a {
-  font-family: 'Open Sans', sans-serif; }
-body a, body .fa {
-  text-decoration: none;
-  color: white;
-  font-size: 23px; }
-body .me {
-  max-width: 300px; }
+body {
+  margin: auto; }
+  body h1, body h2 {
+    font-family: 'Kaushan Script', cursive; }
+  body p, body a {
+    font-family: 'Open Sans', sans-serif; }
+  body a, body .fa {
+    text-decoration: none;
+    color: white;
+    font-size: 23px; }
+  body .me {
+    max-width: 300px; }
 
 @media (max-width: 480px) {
   body p {
@@ -603,9 +605,6 @@ body .me {
     width: 90%; } }
 @media (min-width: 1200px) {
   body, nav {
-    width: 1200px; }
-
-  body {
-    margin: 0 10% 0 10%; } }
+    width: 1200px; } }
 
 /*# sourceMappingURL=style.css.map */
