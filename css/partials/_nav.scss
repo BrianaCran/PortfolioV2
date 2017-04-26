@@ -1,9 +1,8 @@
 nav{
   background: black;
   border-bottom: 2px solid white;
-  position: fixed;
   width: 100%;
-  z-index: 100;
+  position: fixed;
     ul{
        list-style-type: none;
        width: 100%;
@@ -30,6 +29,22 @@ nav{
               color: #e5e5e5;
             }
       }
+    }
+    .portfolio{
+      position: relative;
+      .work{
+        display: none;
+        position: absolute;
+        background: black;
+        li{
+          display: block;
+          width: 100%;
+          border-bottom: 2px solid white;
+        }
+      }
+    }
+    .portfolio:hover .work{
+      display: block;
     }
     .mobile,.dropDown,.dropContent{
                                     display: none;

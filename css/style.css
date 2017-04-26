@@ -367,9 +367,8 @@ textarea {
 nav {
   background: black;
   border-bottom: 2px solid white;
-  position: fixed;
   width: 100%;
-  z-index: 100; }
+  position: fixed; }
   nav ul {
     list-style-type: none;
     width: 100%;
@@ -390,6 +389,18 @@ nav {
       background: #348099; }
       nav ul .active a {
         color: #e5e5e5; }
+  nav .portfolio {
+    position: relative; }
+    nav .portfolio .work {
+      display: none;
+      position: absolute;
+      background: black; }
+      nav .portfolio .work li {
+        display: block;
+        width: 100%;
+        border-bottom: 2px solid white; }
+  nav .portfolio:hover .work {
+    display: block; }
   nav .mobile, nav .dropDown, nav .dropContent {
     display: none; }
   nav .dropBtn {
@@ -412,9 +423,46 @@ nav {
 
 header {
   background: #00AD82; }
+  header .welcome {
+    padding: 60px 0 20px;
+    text-align: center;
+    background: #e5e5e5; }
+    header .welcome .animated {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-bottom: 0;
+      animation: typing 5.5s steps(26) both;
+      animation-iteration-count: infinite;
+      animation-direction: alternate; }
+    header .welcome span {
+      margin: -10px 0 0 5px;
+      animation: blink 500ms steps(27) 2s infinite;
+      position: relative;
+      display: inline-block; }
+@keyframes typing {
+  from {
+    width: 0; }
+  25% {
+    width: 3em; }
+  50% {
+    width: 8em; }
+  75% {
+    width: 13.5em; }
+  to {
+    width: 14em;
+    animation-delay: 10s; } }
+@keyframes blink {
+  from {
+    color: transparent; }
+  50% {
+    color: black; } }
   header article {
     width: 100%;
-    padding: 70px 0px 30px 0px; }
+    padding: 0px 0px 30px 0px; }
+    header article .showcase {
+      width: 75%;
+      margin: 3% 12% 0 12%; }
     header article .leftSide {
       width: 40%;
       display: inline-block;
@@ -425,12 +473,12 @@ header {
       header article .leftSide h3 {
         padding-left: 15px; }
       header article .leftSide img {
-        width: 60%;
+        width: 65%;
         padding-left: 12%; }
     header article .codepen, header article .rightSide {
       width: 50%;
       display: inline-block;
-      padding: 10px 0 0 20px; }
+      padding: 10px 0 0 50px; }
       header article .codepen h3, header article .codepen p, header article .rightSide h3, header article .rightSide p {
         line-height: 40px;
         padding: 0 10px; }
@@ -458,6 +506,13 @@ main {
       main article .projectPics a img, main article .listSection a img {
         width: 45%;
         margin: 10px; }
+      main article .projectPics a img:hover, main article .listSection a img:hover {
+        animation: twitch 1s linear; }
+@keyframes twitch {
+  from {
+    transform: rotateY(0deg); }
+  to {
+    transform: rotateY(360deg); } }
       main article .projectPics .samples, main article .listSection .samples {
         margin: 10px 0 10px 33px;
         width: 44%; }
@@ -474,22 +529,11 @@ footer {
   display: inline-block;
   width: 100%;
   padding: 10px 0px 20px 0px; }
-  footer h2, footer p, footer .btn:hover {
+  footer h2, footer p {
     color: #00AD82; }
   footer .footerLeft {
     padding-left: 30px;
     float: left; }
-  footer .footerRight {
-    clear: left;
-    display: inline-block;
-    padding-left: 51px; }
-  footer .btn {
-    background: #348099;
-    color: white;
-    border: none;
-    padding: 10px; }
-  footer .btn:hover {
-    background: white; }
 
 body {
   margin: auto; }
@@ -540,14 +584,7 @@ body {
       margin: 20px 0; }
 
   footer h2, footer p {
-    padding-left: 30px; }
-  footer .footerLeft, footer .footerRight {
-    display: block;
-    padding: 5px 0 10px 0px; }
-    footer .footerLeft form, footer .footerRight form {
-      padding-left: 30px; }
-      footer .footerLeft form p, footer .footerRight form p {
-        padding: 0; } }
+    padding-left: 30px; } }
 @media (min-width: 481px) and (max-width: 768px) {
   body header .leftSide, body header .codepen, body header .rightSide {
     display: block;
@@ -582,10 +619,7 @@ body {
     main article .projectPics .samples, main article .listSection .samples {
       display: block;
       width: 100%;
-      margin: 10px 0; }
-
-  footer .footerRight {
-    display: block; } }
+      margin: 10px 0; } }
 @media (min-width: 769px) and (max-width: 1100px) {
   body header .leftSide, body header .codepen, body header .rightSide {
     display: block;

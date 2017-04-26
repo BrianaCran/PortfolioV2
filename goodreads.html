@@ -14,11 +14,11 @@
       <header>
         <nav role="navigation">
           <ul class="desktop">
-            <li class="active portfolio"><a href="index.html"  title="To Portfolio Page">Portfolio</a>
+            <li class="portfolio"><a href="index.html"  title="To Portfolio Page">Portfolio</a>
               <ul class="work">
                 <li><a href="pftg.html" title="">Prey for the Gods</a></li>
                 <li><a href="scoundrels.html" title="">Scoundrels of the Atlantic</a></li>
-                <li><a href="goodreads.html" title="">Goodreads</a></li>
+                <li class="active"><a href="goodreads.html" title="">Goodreads</a></li>
                 <li><a href="branchless.html" title="">Branchless</a></li>
               </ul>
             </li>
@@ -33,11 +33,11 @@
             <ul class="mobile dropDown">
             <h2 class="dropBtn">Menu</h2>
             <div class="dropContent">
-            <li class="active"><a href="index.html">Portfolio</a>
+            <li><a href="index.html">Portfolio</a>
                 <ul>
                   <li><a href="pftg.html" title="">Prey for the Gods</a></li>
                   <li><a href="scoundrels.html" title="">Scoundrels of the Atlantic</a></li>
-                  <li><a href="goodreads.html" title="">Goodreads</a></li>
+                  <li class="active"><a href="goodreads.html" title="">Goodreads</a></li>
                   <li><a href="branchless.html" title="">Branchless</a></li>
                 </ul>
             </li>
@@ -53,35 +53,52 @@
           </ul>
         </nav>
         <section class="welcome">
-          <h1 class="animated">Welcome to Briana's Portfolio!</h1>
-          <span>_</span>
+          <h1>Goodreads Redesign</h1>
         </section>
-      <article>
-          <section class="leftSide">
-            <h1>Monthly Feature</h1>
-            <h3>Every month I update this section to give an idea of what I'm either working on or learning!<h3>
-            <p>Here is an interactive list that I created using html, css, javascript, and jquery. I used handlebars js to create the template for the list items. The list items
-            are created from the input box submission. To add extra functionality I included checking a task as done by clicking, removing individual items, auto sorting completed to the bottom
-          of the list, and having a clear all button.</p>
-          </section>
-          <section class="codepen">
-            <p data-height="265" data-theme-id="dark" data-slug-hash="oBmZLJ" data-default-tab="result" data-user="brianacrandall" data-embed-version="2" data-pen-title="make your own list" class="codepen">See the Pen <a href="http://codepen.io/brianacrandall/pen/oBmZLJ/">Make your own list!</a> by Briana Crandall (<a href="http://codepen.io/brianacrandall">@brianacrandall</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-          </section>
-      </article>
-      </header>
-      <main role="main">
         <article>
-          <section class="projectPics">
-            <a href="pftg.php" title="To Prey For the Gods Project"><img src="images/pftgBG.png" alt="Prey for the Gods Project Front Page Image"></a>
-            <a href="goodreads.php" title="To Good Reads Project"><img src="images/goodreads.png" alt="Goodreads Project Front Page Image"></a>
-            <a href="scoundrels.php" title="To Scoundrels of the Atlantic Project"><img src="images/scoundrelsPreview.png" alt="Scoundrels of the Atlantic Front Page Image"></a>
-            <a href="branchless.php" title="To Branchless Project"><img src="images/bbPreview.png" alt="Branchless Project Logo Image"></a>
-          </section>
+              <img src="images/goodreads.png" class="showcase" alt="Goodreads Project Front Page Image">
+        </article>
+      </header>
+
+      <main role="main">
+          <!--Final Project Prey For The Gods -->
+            <article>
+               <section class="listSection">
+                 <h1>Process</h1>
+                 <p>
+                    Goodreads already has a large user base and so the redesign would need to stay within branding, but provided improved
+                    usability and easy navigation.
+                 </p>
+                 <ul>
+                     <h3>Process</h3>
+                     <li>Sketching</li>
+                     <li>Wireframes</li>
+                     <li>Mockups</li>
+                     <li>Html, Css, Jquery</li>
+                 </ul>
+                 <ul>
+                     <h3>Materials Used</h3>
+                     <li>Sketching supplies</li>
+                     <li>Illustrator</li>
+                     <li>Photoshop</li>
+                     <li>Atom</li>
+                </ul>
+                <ul class="top">
+                </ul>
+              <ul>
+                <h3>If you wish to view the site or the github repository:</h3>
+                <a href="https://github.com/BrianaCran/goodreadsbookshelf" target="_blank" title="to github repo external website opens in new tab"><i class="fa fa-github" aria-hidden="true"></i> Code</a>
+                <a href="https://brianacran.github.io/goodreadsbookshelf/" target="_blank" title="to github hosted site external website opens in new tab"><i class="fa fa-github" aria-hidden="true"></i> Live Site</a>
+               </ul>
+                  <img src="images/goodreadsdesktop.png" class="samples top" alt="Desktop preview of Goodreads Bookself redesign">
+                  <img src="images/goodreadstablet.png"  class="samples" alt="Tablet preview of Goodreads Bookself redesign">
+                  <img src="images/goodreadsmobile.png"  class="samples" alt="Mobile preview of Goodreads Bookself redesign">
+              </section>
         </article>
       </main>
 
-      <footer>
-        <section id ="bottom" class="footerLeft">
+      <footer id="bottom">
+        <section class="footerLeft">
           <h2>Contact Briana Crandall:</h2>
           <p>
             (919)-356-2477
@@ -93,11 +110,8 @@
         </section>
 
         <section class="footerRight">
-
         </section>
       </footer>
-
-    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
   </body>
 </html>

@@ -25,6 +25,13 @@ main{
                                 width: 45%;
                                 margin: 10px;
                                }
+                            img:hover{
+                              animation: twitch 1s linear;
+                            }
+                            @keyframes twitch{
+                              from{transform: rotateY(0deg);}
+                              to{transform: rotateY(360deg);}
+                            }
                             }
                         .samples{
                           margin: 10px 0 10px 33px;
