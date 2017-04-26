@@ -1,8 +1,42 @@
 header{
        background: #00AD82;
-       article{
+       .welcome{
+         padding: 60px 0 20px;
+         text-align: center;
+         background: #e5e5e5;
+         .animated{
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-bottom: 0;
+            animation: typing 5.5s steps(26) both;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+           }
+       span{
+            margin: -10px 0 0 5px;
+            animation: blink 500ms steps(27) 2s infinite;
+            position: relative;
+            display: inline-block;
+           }
+       @keyframes typing{
+         from{width: 0;}
+         25%{width: 3em;}
+         50%{ width: 8em;}
+         75%{width: 13.5em;}
+         to{width: 14em;
+            animation-delay: 10s;}
+        }
+      @keyframes blink {from {color: transparent;}
+                     50% {color: black;}}
+        }
+      article{
                width: 100%;
-               padding: 70px 0px 30px 0px;
+               padding: 0px 0px 30px 0px;
+               .showcase{
+                 width: 75%;
+                 margin: 3% 12% 0 12%;
+               }
                .leftSide{
                           width: 40%;
                           display: inline-block;
@@ -16,14 +50,14 @@ header{
                             padding-left: 15px;
                            }
                         img{
-                            width: 60%;
+                            width: 65%;
                             padding-left: 12%;
                            }
                          }
                .codepen,.rightSide{
                                     width: 50%;
                                     display: inline-block;
-                                    padding: 10px 0 0 20px;
+                                    padding: 10px 0 0 50px;
 
                               h3,p{
                                  line-height: 40px;

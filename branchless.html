@@ -14,12 +14,12 @@
       <header>
         <nav role="navigation">
           <ul class="desktop">
-            <li class="active portfolio"><a href="index.html"  title="To Portfolio Page">Portfolio</a>
+            <li class="portfolio"><a href="index.html"  title="To Portfolio Page">Portfolio</a>
               <ul class="work">
                 <li><a href="pftg.html" title="">Prey for the Gods</a></li>
                 <li><a href="scoundrels.html" title="">Scoundrels of the Atlantic</a></li>
                 <li><a href="goodreads.html" title="">Goodreads</a></li>
-                <li><a href="branchless.html" title="">Branchless</a></li>
+                <li class="active"><a href="branchless.html" title="">Branchless</a></li>
               </ul>
             </li>
             <li><a href="about.html"  title="To About Page">About</a></li>
@@ -33,12 +33,12 @@
             <ul class="mobile dropDown">
             <h2 class="dropBtn">Menu</h2>
             <div class="dropContent">
-            <li class="active"><a href="index.html">Portfolio</a>
+            <li><a href="index.html">Portfolio</a>
                 <ul>
                   <li><a href="pftg.html" title="">Prey for the Gods</a></li>
                   <li><a href="scoundrels.html" title="">Scoundrels of the Atlantic</a></li>
                   <li><a href="goodreads.html" title="">Goodreads</a></li>
-                  <li><a href="branchless.html" title="">Branchless</a></li>
+                  <li class="active"><a href="branchless.html" title="">Branchless</a></li>
                 </ul>
             </li>
             <li><a href="about.html">About</a></li>
@@ -53,35 +53,56 @@
           </ul>
         </nav>
         <section class="welcome">
-          <h1 class="animated">Welcome to Briana's Portfolio!</h1>
-          <span>_</span>
+          <h1>Design from the Ground up</h1>
         </section>
-      <article>
-          <section class="leftSide">
-            <h1>Monthly Feature</h1>
-            <h3>Every month I update this section to give an idea of what I'm either working on or learning!<h3>
-            <p>Here is an interactive list that I created using html, css, javascript, and jquery. I used handlebars js to create the template for the list items. The list items
-            are created from the input box submission. To add extra functionality I included checking a task as done by clicking, removing individual items, auto sorting completed to the bottom
-          of the list, and having a clear all button.</p>
-          </section>
-          <section class="codepen">
-            <p data-height="265" data-theme-id="dark" data-slug-hash="oBmZLJ" data-default-tab="result" data-user="brianacrandall" data-embed-version="2" data-pen-title="make your own list" class="codepen">See the Pen <a href="http://codepen.io/brianacrandall/pen/oBmZLJ/">Make your own list!</a> by Briana Crandall (<a href="http://codepen.io/brianacrandall">@brianacrandall</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-          </section>
-      </article>
-      </header>
-      <main role="main">
         <article>
-          <section class="projectPics">
-            <a href="pftg.php" title="To Prey For the Gods Project"><img src="images/pftgBG.png" alt="Prey for the Gods Project Front Page Image"></a>
-            <a href="goodreads.php" title="To Good Reads Project"><img src="images/goodreads.png" alt="Goodreads Project Front Page Image"></a>
-            <a href="scoundrels.php" title="To Scoundrels of the Atlantic Project"><img src="images/scoundrelsPreview.png" alt="Scoundrels of the Atlantic Front Page Image"></a>
-            <a href="branchless.php" title="To Branchless Project"><img src="images/bbPreview.png" alt="Branchless Project Logo Image"></a>
-          </section>
+              <img src="images/bbPreview.png" class="showcase" alt="Branchless leaf logo">
+        </article>
+      </header>
+
+      <main role="main">
+          <!--Final Project Prey For The Gods -->
+            <article>
+               <section class="listSection">
+                 <h1>The Process</h1>
+                 <p>
+                    A hypothetical upcoming banking company called Branchless launched in early 2016. They brought change to traditional banking by having no physical branch locations.
+                    As a result, it was decided that a banking app was crucial in order to continue growing their customer base as well as supporting their existing customers better.
+                    For this project I had to create the branding or style guide lines as there were none set out. After developing a logo and choosing a good scheme
+                    of colors I jumped into brainstorming what actions user would like or need. After getting a few ideas of necessary needs I began sketching how these interactions
+                    would look like. After sketching was completed the full color mockups started and the mockups were turned into a prototype in Invision. This project was not brought
+                    into the development phase.
+                 </p>
+                 <ul>
+                     <h3>Process</h3>
+                     <li>Sketching</li>
+                     <li>Mockups</li>
+                     <li>Prototyping</li>
+                 </ul>
+                 <ul>
+                     <h3>Materials Used</h3>
+                     <li>Sketching Supplies</li>
+                     <li>Photoshop</li>
+                     <li>Invision</li>
+               </ul>
+               <ul>
+                 <h3>If you wish to view the sketches:</h3>
+                 <a href="documents/sketches.pdf" target="_blank" title="Opens sketchs in new tab"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Sketches</a>
+               </ul>
+              <ul>
+                <h3>If you wish to view prototype:</h3>
+                <a href="https://invis.io/XT8EM2EEJ" target="_blank"><i class="fa fa-play-circle" aria-hidden="true"></i> Prototype</a>
+               </ul>
+                  <img src="images/branchless.png" class="samples top">
+                  <img src="images/branchless2.png" class="samples">
+                  <img src="images/branchless3.png" class="samples top">
+                  <img src="images/branchless4.png" class="samples">
+              </section>
         </article>
       </main>
 
-      <footer>
-        <section id ="bottom" class="footerLeft">
+      <footer id="bottom">
+        <section class="footerLeft">
           <h2>Contact Briana Crandall:</h2>
           <p>
             (919)-356-2477
@@ -93,11 +114,8 @@
         </section>
 
         <section class="footerRight">
-
         </section>
       </footer>
-
-    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
   </body>
 </html>
